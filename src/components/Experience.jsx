@@ -183,7 +183,6 @@ export default function Experience() {
         <Col lg={2} className="d-none d-lg-block"></Col>
         <Col lg={8}>
           <Container>
-            <Row>
               <Card>
                 <Card body>
                   <Card.Title as="h1">Shahrukh Shaik</Card.Title>
@@ -203,11 +202,12 @@ export default function Experience() {
     <a href="#!" className="card-link">Another link</a> */}
                 </Card>
               </Card>
-            </Row>
           </Container>
 
-          <Container fluid className="bg-light px-sm-5 mb-2">
+          <Container className="py-1">
+          <Card bg="light">
             <Row className="py-3 px-sm-5  mx-sm-5 justify-content-sm-center">
+            
               {/* <Col className=""> */}
               {/* <Card bg="light"> */}
               {/* <div className="card py-2 px-2 bg-light"> */}
@@ -272,7 +272,9 @@ export default function Experience() {
     <div className="col-lg-auto col-sm-auto"><LinkedInIcon/> linkedin.com/in/shahrukh432</div> */}
               {/* </Card> */}
               {/* </Col> */}
+              
             </Row>
+            </Card>
           </Container>
 
           
