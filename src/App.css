@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,40 @@
   to {
     transform: rotate(360deg);
   }
+} */
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
+.card {
+  border: 0px;
+}
+.Work, .otherProjects {
+  padding-bottom: 0px;
+}
+
+.companyName {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-link {
+  text-decoration: none;
+  color: inherit;
+}
+.ReactCollapse--collapse {
+  /* max-width: 800px;
+  border: 1px solid rgba(3, 169, 244, 0.3);
+  border-radius: 10px;
+  background-color: rgba(100, 255, 100, 0.1); */
+  transition: height 500ms;
 }
