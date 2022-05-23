@@ -12,11 +12,31 @@ import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined
 import { Collapse } from "react-collapse";
 
 export default function Experience() {
-  // eslint-disable-next-line
-  const [activeIndex, setActiveIndex] = useState(null);
+  const countWork=ExperienceDetails["Work Experience"].length;
+  const [newActive,setActive] = useState([...Array(countWork).fill(true)]);
+  // console.log(newActive);
+  // const [activeIndex, setActiveIndex] = useState(null);
   const [workActiveIndex, setWorkActiveIndex] = useState(null);
   const [workToggle, setWorkToggle] = useState({state: true, style:{}});
   const [otherToggle, setOtherToggle] = useState({state: true, style:{}});
+  function handleAchievement(index){
+    // console.log(newActive);
+    
+    setActive((prev) => {
+      let temptoggles=[...prev];
+      // console.log(newActive);
+      if(prev[index] === false){
+        temptoggles[index]=true;
+        console.log(temptoggles);
+        return temptoggles;
+      }
+      else{
+        temptoggles[index]=false;
+        console.log(temptoggles[index]);
+        return temptoggles;
+      }
+     } )  
+                };
   function handleClick(event){
                   console.log(event.currentTarget.id);
                   function toggle(setFunction){
@@ -71,28 +91,27 @@ export default function Experience() {
               <Button
                 variant="link"
                 className="py-0 px-0 mt-0 mb-2"
-                onClick={(event) =>
-                  setActiveIndex(activeIndex === index ? null : index)
-                }
-                aria-controls={"achievement" + index}
-                aria-expanded="true"
+                onClick={()=> {handleAchievement(index)}}
+                  
+                // aria-controls={"achievement" + index}
+                // aria-expanded="true"
               >
                 {" "}
                 Achievement/Tasks
                 <ArrowDropDownOutlinedIcon
                   style={
-                    activeIndex === index
-                      ? { transform: "rotate(270deg)" }
-                      : { transform: "none" }
+                    newActive[index]
+                      ? { transform: "none" }
+                      : { transform: "rotate(270deg)"}
                   }
                 />
               </Button>{" "}
             </Card.Subtitle>
-            <Collapse isOpened={activeIndex !== index}>
-              <div
-                className={activeIndex === index ? "show" : "hide"}
+            <Collapse isOpened={newActive[index]}>
+              <div>
+                {/* className={newActive[index] ? "show" : "hide"}
                 id={"achievement" + index}
-              >
+              > */}
                 <Card.Text as="ul">
                   {item["TaskAchievements"].map((data, idx) => (
                     <li key={idx}>{parse(data)}</li>
@@ -205,8 +224,8 @@ export default function Experience() {
           </Container>
 
           <Container className="py-1">
-          <Card bg="light">
-            <Row className="py-3 px-sm-5  mx-sm-5 justify-content-sm-center">
+          <Card bg="gray-300">
+            <Row className="py-3 mx-sm-5 justify-content-sm-center">
             
               {/* <Col className=""> */}
               {/* <Card bg="light"> */}

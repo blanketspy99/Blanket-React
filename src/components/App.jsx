@@ -1,12 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-
 // import MyNavigationBar from './MyNavigation';
+import "../App.scss";
 import Body from "./Body";
 import Experience from "./Experience";
-import "../App.css";
+import "../App_custom.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/Layout";
 export default function App() {
