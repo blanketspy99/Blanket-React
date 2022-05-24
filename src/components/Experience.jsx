@@ -10,6 +10,7 @@ import MyLocationIcon from "@mui/icons-material/MyLocation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import { Collapse } from "react-collapse";
+import Skills from "./skills";
 
 export default function Experience() {
   const countWork=ExperienceDetails["Work Experience"].length;
@@ -64,7 +65,7 @@ export default function Experience() {
   let itemList = [];
   ExperienceDetails["Work Experience"].forEach((item, index) => {
     itemList.push(
-      <Container key={index} className="mb-2">
+      <Container  fluid="lg" key={index} className="mb-2">
         <Card bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Role"]}</Card.Title>
@@ -121,7 +122,7 @@ export default function Experience() {
             </Collapse>
           </Card.Body>
         </Card>
-        <hr></hr>
+        {/* <hr></hr> */}
       </Container>
     );
   });
@@ -129,7 +130,7 @@ export default function Experience() {
   let otherList = [];
   ExperienceDetails["Other Projects"].forEach((item, index) => {
     otherList.push(
-      <Container key={"other"+index} className="mb-2">
+      <Container  fluid="lg"  key={"other"+index} className="mb-2">
         <Card bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Title"]}</Card.Title>
@@ -189,7 +190,7 @@ export default function Experience() {
             </Collapse>
           </Card.Body>
         </Card>
-        <hr></hr>
+        {/* <hr></hr> */}
       </Container>
     );
   });
@@ -201,7 +202,7 @@ export default function Experience() {
       <Row>
         <Col lg={2} className="d-none d-lg-block"></Col>
         <Col lg={8}>
-          <Container>
+          <Container fluid="lg">
               <Card>
                 <Card body>
                   <Card.Title as="h1">Shahrukh Shaik</Card.Title>
@@ -223,7 +224,7 @@ export default function Experience() {
               </Card>
           </Container>
 
-          <Container className="py-1">
+          <Container  fluid="lg" className="py-1">
           <Card bg="gray-300">
             <Row className="py-3 mx-sm-5 justify-content-sm-center">
             
@@ -297,7 +298,7 @@ export default function Experience() {
           </Container>
 
           
-          <Container className="Work">
+          <Container  fluid="lg" className="Work">
             <Card bg="white">
               <Card.Body className="Work">
               <Button
@@ -313,28 +314,14 @@ export default function Experience() {
                 /></Card.Title>
                 </Button>
               </Card.Body>
-            </Card>
-          </Container>
-          <Collapse isOpened={workToggle.state}>
-          {/* <Container className="mb-2">
-<Card bg="white">
-<Card.Body>
-  <Card.Title as="h4">Senior Platform Engineer</Card.Title>
-  <Card.Subtitle as="p" className="companyName">Happiest Minds Technologies</Card.Subtitle>
-  <Row>
-      <Col lg={6}>date</Col>
-      <Col lg={6} className='text-end'>location</Col>
-  </Row>
-  <Card.Subtitle className="mb-2 text-muted"> Card subtitle </Card.Subtitle>
-  <Card.Subtitle className="text-muted"> Card subtitle </Card.Subtitle>
-  <Card.Text> This is a text </Card.Text>
-  </Card.Body>
-</Card>
-</Container> */}
+              <Collapse isOpened={workToggle.state}>
           {itemList}
           </Collapse>
+
+            </Card>
+          </Container>
           {/* {<Details/>} */}
-          <Container className="otherProjects mt-0">
+          <Container  fluid="lg" className="otherProjects mt-0">
             <Card bg="white">
               <Card.Body className="otherProjects" >
               <Button
@@ -349,13 +336,15 @@ export default function Experience() {
                 <Card.Title as="h3">Other Projects<ArrowDropDownOutlinedIcon  style={otherToggle.style}/></Card.Title>
                 </Button>
               </Card.Body>
+              <Collapse isOpened={otherToggle.state}>
+          {otherList}</Collapse>
             </Card>
           </Container>
-          <Collapse isOpened={otherToggle.state}>
-          {otherList}</Collapse>
+
         </Col>
         <Col lg={2} className="d-none d-lg-block"></Col>
       </Row>
+      <Skills/>
     </div>
   );
 }
