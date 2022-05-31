@@ -36,10 +36,10 @@
     transform: rotate(360deg);
   }
 } */
-html {
+/* html {
   overflow: -moz-scrollbars-vertical; 
   overflow-y: scroll;
-}
+} */
 body {
   background-color: skyblue;
 }
@@ -75,3 +75,25 @@ a {
   background-color: rgba(100, 255, 100, 0.1); */
   transition: height 500ms;
 }
+
+.modal-content {
+  background-color: whitesmoke;
+}
+
+.modal-header, .nav.nav-tabs {
+  border-bottom: 1px solid darkgray;
+}
+
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: darkgray;
+    border-color: darkgray darkgray lightgray;
+}
+
+li > button.nav-link, li > button.nav-link:hover {
+  color: inherit;
+  background-color: grey;
+}
+/* li > button.nav-link:active {
+  background-color: darkgray;
+} */

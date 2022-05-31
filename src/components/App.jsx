@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.scss";
 import Body from "./Body";
 import Experience from "./Experience";
+
 import "../App_custom.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/Layout";
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Body />} />
             <Route path="experience" element={<Experience />} />
+            {/* <Route path="test" element={<SkillDetails />} /> */}
             {/* <Route path="contact" element={<Contact />} /> */}
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>

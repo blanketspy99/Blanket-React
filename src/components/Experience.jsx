@@ -11,15 +11,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import { Collapse } from "react-collapse";
 import Skills from "./skills";
+// import ReactReadMoreReadLess from "react-read-more-read-less";
 
 export default function Experience() {
   const countWork=ExperienceDetails["Work Experience"].length;
-  const [newActive,setActive] = useState([...Array(countWork).fill(true)]);
+  const [newActive,setActive] = useState([...Array(countWork).fill(false)]);
   // console.log(newActive);
   // const [activeIndex, setActiveIndex] = useState(null);
   const [workActiveIndex, setWorkActiveIndex] = useState(null);
-  const [workToggle, setWorkToggle] = useState({state: true, style:{}});
-  const [otherToggle, setOtherToggle] = useState({state: true, style:{}});
+  const [workToggle, setWorkToggle] = useState({state: false,style: { transform: "rotate(270deg)"}});
+  const [otherToggle, setOtherToggle] = useState({state: false,style: { transform: "rotate(270deg)"}});
   function handleAchievement(index){
     // console.log(newActive);
     
@@ -180,11 +181,17 @@ export default function Experience() {
               <div>
                 {/* // className={activeIndex === index ? "show" : "hide"}
                 // id={"achievement" + index} */}
-              
+              {/* <li key={idx}> */}
+              {/*  </li> */}
                 <Card.Text as="ul">
-                  {item["Roles and Responsibilities"].map((data, idx) => (
-                    <li key={idx}>{parse(data)}</li>
-                  ))}
+                
+                
+
+                  {parse(item["Roles and Responsibilities"].map((data, idx) => (
+                    "<li key="+idx+">"
+                    +data+"</li>"
+                  )).join(""))}
+                  
                 </Card.Text>
               </div>
             </Collapse>
@@ -210,6 +217,7 @@ export default function Experience() {
                     Senior Software Engineer
                   </Card.Subtitle>
                   <Card.Text as="em">
+
                     DevOps/Infrastructure engineer with 4+ years of hands-on
                     experience in architecting/ automating and optimizing
                     critical deployments over large infrastructure in AWS,
