@@ -1,21 +1,22 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 export default function MyNavigationBar() {
   return (
     <div>
-      <Navbar collapseOnSelect expand="sm">
+      <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
         {" "}
         {/* bg="dark" variant="dark"*/}
         <Container>
-          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="/">Shahrukh</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="experience">Resume</Nav.Link>
-              <Nav.Link href="test">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <Nav.Link as={NavLink} to="experience">Resume</Nav.Link>
+              <Nav.Link as="a" href="https://github.com/blanketspy99" target="_blank">Repos</Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -27,12 +28,12 @@ export default function MyNavigationBar() {
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+              {/* <Nav.Link as={NavLink} to="#">More deets</Nav.Link> */}
+              <Nav.Link as={NavLink} eventKey={2} to="#">
+                TBD
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

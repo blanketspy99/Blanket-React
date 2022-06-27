@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import { Card, Col, Row, Button } from "react-bootstrap";
 import ExperienceDetails from "../experience.json";
-import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
-import { Collapse } from "react-collapse";
 import SkillDetails from "../pages/SkillDetails";
-// import { ButtonBase } from "@mui/material";
+import ResumeCardTitle from "./ResumeCardTitle";
+
 
 export default function Skills() {
   const skillDetails = ExperienceDetails["Skills"];
   const skillTypes = Object.keys(skillDetails);
   const skillTypesCount = skillTypes.length;
-  const [toggle, setToggle] = useState({
-    state: false,
-    style: { transform: "rotate(270deg)" },
-  });
   const [show, setShow] = useState(false);
   // let skillsList=[];
   let part1 = [];
@@ -34,54 +29,21 @@ export default function Skills() {
       );
     }
   }
-//   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  function handleClick(event) {
-    console.log(event.currentTarget.id);
-    function toggle(setFunction) {
-      setFunction((prev) => {
-        if (prev.state === true) {
-          return { state: false, style: { transform: "rotate(270deg)" } };
-        } else {
-          return { state: !prev.state, style: {} };
-        }
-      });
-    }
-    toggle(setToggle);
-    // switch (event.currentTarget.id){
-    //   case "work":
-    //     toggle(setWorkToggle);
-    //     break;
-    //   case "otherProjects":
-    //     toggle(setOtherToggle);
-    //     break;
-    //   default:
-    //     console.log("")
-    // }
-  }
 
   return (
     <>
-      <Row>
-        <Col lg={2} className="d-none d-lg-block"></Col>
-        <Col lg={8}>
-          <Container fluid="lg">
-            <Card>
-              <Card.Body>
-                <Button
-                  id="otherProjects"
-                  variant="link"
-                  className="py-0 px-0 mt-0 mb-2"
-                  onClick={handleClick}
-                >
-                  <Card.Title as="h3">
-                    {" "}
-                    Skills {}
-                    <ArrowDropDownOutlinedIcon style={toggle.style} />
-                  </Card.Title>
-                </Button>
-                <Button
+    <ResumeCardTitle title="Skills" id="skills">
+    <Card.Text as="ul">
+                    <Row>
+                      <Col lg={6} md={6}>
+                        <Card.Text as="ul"> {part1}</Card.Text>
+                      </Col>
+                      <Col lg={6} md={6}>
+                        <Card.Text as="ul"> {part2}</Card.Text>
+                      </Col>
+                    </Row>
+                    <Button
                   variant="link"
                   className="py-0 px-0 mt-3 float-end"
                   onClick={handleShow}
@@ -91,25 +53,9 @@ export default function Skills() {
                     more... {}
                   </Card.Title>
                 </Button>
-                <Collapse isOpened={toggle.state}>
-                  <Card.Text as="ul">
-                    <Row>
-                      <Col lg={6} md={6}>
-                        <Card.Text as="ul"> {part1}</Card.Text>
-                      </Col>
-                      <Col lg={6} md={6}>
-                        <Card.Text as="ul"> {part2}</Card.Text>
-                      </Col>
-                    </Row>
                   </Card.Text>
-                </Collapse>
-                {/* <hr></hr> */}
-              </Card.Body>
-            </Card>
-          </Container>
-        </Col>
-        <Col lg={2} className="d-none d-lg-block"></Col>
-      </Row>
+    </ResumeCardTitle>
+
       { show && <SkillDetails onClose={setShow}/>}
     </>
   );

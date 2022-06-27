@@ -3,7 +3,7 @@ import { Modal, Button, Row, Col, Tab, Tabs, Fade } from "react-bootstrap";
 
 // import { createTheme } from '@mui/material';
 import CircleIcon from "@mui/icons-material/Circle";
-// import { BsCircleHalf } from 'react-icons/bs';
+
 import $ from "jquery";
 
 export default function SkillDetails(props) {
@@ -71,7 +71,7 @@ export default function SkillDetails(props) {
         )
       );
 
-    let lg = props.lg === null ? 6 : props.lg;
+    let lg = props.lg === (null || undefined) ? 6 : props.lg;
     // console.log(props.keys[1]);
     var maxHeight = 0;
     $(".tab-content .tab-pane").each(function () {

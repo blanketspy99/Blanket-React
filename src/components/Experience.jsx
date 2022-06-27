@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-// import 'bootstrap/dist/css/bootstrap.css';
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import ExperienceDetails from "../experience.json";
 import parse from "html-react-parser";
 import LinkIcon from "@mui/icons-material/Link";
@@ -8,60 +7,18 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
-import { Collapse } from "react-collapse";
 import Skills from "./skills";
-// import ReactReadMoreReadLess from "react-read-more-read-less";
+import Education from "./Education";
+import Certification from "./Certifications";
+import ResumeCardTitle from "./ResumeCardTitle";
+import ResumeRR from "./ResumeRR";
+import Interests from "./Interests";
 
 export default function Experience() {
-  const countWork=ExperienceDetails["Work Experience"].length;
-  const [newActive,setActive] = useState([...Array(countWork).fill(false)]);
   // console.log(newActive);
   // const [activeIndex, setActiveIndex] = useState(null);
-  const [workActiveIndex, setWorkActiveIndex] = useState(null);
-  const [workToggle, setWorkToggle] = useState({state: false,style: { transform: "rotate(270deg)"}});
-  const [otherToggle, setOtherToggle] = useState({state: false,style: { transform: "rotate(270deg)"}});
-  function handleAchievement(index){
-    // console.log(newActive);
-    
-    setActive((prev) => {
-      let temptoggles=[...prev];
-      // console.log(newActive);
-      if(prev[index] === false){
-        temptoggles[index]=true;
-        console.log(temptoggles);
-        return temptoggles;
-      }
-      else{
-        temptoggles[index]=false;
-        console.log(temptoggles[index]);
-        return temptoggles;
-      }
-     } )  
-                };
-  function handleClick(event){
-                  console.log(event.currentTarget.id);
-                  function toggle(setFunction){
-                  setFunction((prev) => {
-                    if(prev.state === true){
-                    return {state: false,style: { transform: "rotate(270deg)" }}
-                    
-                    }
-                    else {
-                      return {state: !prev.state, style:{}}
-                    }
-                  })}
-                  switch (event.currentTarget.id){
-                    case "work":
-                      toggle(setWorkToggle);
-                      break;
-                    case "otherProjects":
-                      toggle(setOtherToggle);
-                      break;
-                    default:
-                      console.log("")
-                  }
-  }
+
+
 
   let itemList = [];
   ExperienceDetails["Work Experience"].forEach((item, index) => {
@@ -88,39 +45,14 @@ export default function Experience() {
               </Col>
             </Row>
             {/* <Card.Subtitle className="mb-2 text-muted"> Card subtitle </Card.Subtitle> */}
-            <Card.Subtitle className="mt-2 text-muted">
-              {" "}
-              <Button
-                variant="link"
-                className="py-0 px-0 mt-0 mb-2"
-                onClick={()=> {handleAchievement(index)}}
-                  
-                // aria-controls={"achievement" + index}
-                // aria-expanded="true"
-              >
-                {" "}
-                Achievement/Tasks
-                <ArrowDropDownOutlinedIcon
-                  style={
-                    newActive[index]
-                      ? { transform: "none" }
-                      : { transform: "rotate(270deg)"}
-                  }
-                />
-              </Button>{" "}
-            </Card.Subtitle>
-            <Collapse isOpened={newActive[index]}>
-              <div>
-                {/* className={newActive[index] ? "show" : "hide"}
-                id={"achievement" + index}
-              > */}
-                <Card.Text as="ul">
-                  {item["TaskAchievements"].map((data, idx) => (
-                    <li key={idx}>{parse(data)}</li>
-                  ))}
-                </Card.Text>
-              </div>
-            </Collapse>
+            <ResumeRR title="Achievement/Tasks" id={index}> 
+            <Card.Text as="ul">
+            {item["TaskAchievements"].map((data, idx) => (
+              <li key={idx}>{parse(data)}</li>
+            ))}
+          </Card.Text>
+          </ResumeRR>
+      
           </Card.Body>
         </Card>
         {/* <hr></hr> */}
@@ -156,45 +88,14 @@ export default function Experience() {
             <Card.Subtitle className="mt-2 text-muted">
               {item["Description"]}
             </Card.Subtitle>
-            <Card.Subtitle className="mt-2 text-muted">
-              {" "}
-              <Button
-                variant="link"
-                className="py-0 px-0 mt-0 mb-2"
-                onClick={(event) =>
-                  setWorkActiveIndex(workActiveIndex === index ? null : index)
-                }>
-                {/* aria-controls={"other" + index}
-                aria-expanded="true" */}
-                {" "}
-                Roles and Responsibilities
-                <ArrowDropDownOutlinedIcon
-                  style={
-                    workActiveIndex === index
-                      ? { transform: "rotate(270deg)" }
-                      : { transform: "none" }
-                  }
-                />
-              </Button>{" "}
-            </Card.Subtitle>
-            <Collapse isOpened={workActiveIndex !== index}>
-              <div>
-                {/* // className={activeIndex === index ? "show" : "hide"}
-                // id={"achievement" + index} */}
-              {/* <li key={idx}> */}
-              {/*  </li> */}
-                <Card.Text as="ul">
-                
-                
-
+            <ResumeRR title="Roles and Responsibilities" id={"other"+index}>
+            <Card.Text as="ul">
                   {parse(item["Roles and Responsibilities"].map((data, idx) => (
                     "<li key="+idx+">"
                     +data+"</li>"
                   )).join(""))}
-                  
-                </Card.Text>
-              </div>
-            </Collapse>
+                  </Card.Text>   
+              </ResumeRR>
           </Card.Body>
         </Card>
         {/* <hr></hr> */}
@@ -203,7 +104,6 @@ export default function Experience() {
   });
 
 
-  console.log(itemList);
   return (
     <div>
       <Row>
@@ -304,55 +204,24 @@ export default function Experience() {
             </Row>
             </Card>
           </Container>
-
-          
-          <Container  fluid="lg" className="Work">
-            <Card bg="white">
-              <Card.Body className="Work">
-              <Button
-                id="work"
-                variant="link"
-                className="py-0 px-0 mt-0 mb-2"
-                onClick={handleClick}
-                // aria-controls={"achievement" + index}
-                // aria-expanded="true"
-              >
-                <Card.Title as="h3">Work Experience<ArrowDropDownOutlinedIcon
-                  style={workToggle.style}
-                /></Card.Title>
-                </Button>
-              </Card.Body>
-              <Collapse isOpened={workToggle.state}>
-          {itemList}
-          </Collapse>
-
-            </Card>
-          </Container>
-          {/* {<Details/>} */}
-          <Container  fluid="lg" className="otherProjects mt-0">
-            <Card bg="white">
-              <Card.Body className="otherProjects" >
-              <Button
-                id="otherProjects"
-                variant="link"
-                className="py-0 px-0 mt-0 mb-2"
-                onClick={handleClick}
-                >
-                {/* // aria-controls={"achievement" + index}
-                // aria-expanded="true"
-              // > */}
-                <Card.Title as="h3">Other Projects<ArrowDropDownOutlinedIcon  style={otherToggle.style}/></Card.Title>
-                </Button>
-              </Card.Body>
-              <Collapse isOpened={otherToggle.state}>
-          {otherList}</Collapse>
-            </Card>
-          </Container>
-
-        </Col>
+          </Col>
         <Col lg={2} className="d-none d-lg-block"></Col>
-      </Row>
+      </Row>         
+       <ResumeCardTitle title="Work Experience" id="Experience"> <Card.Text as="ul">
+                {itemList}
+            </Card.Text> </ResumeCardTitle>
+
+            <ResumeCardTitle title="Other Projects" id="rr"> <Card.Text as="ul">
+                {otherList}
+            </Card.Text> </ResumeCardTitle>
+          {/* {<Details/>} */}
+          
+
+
       <Skills/>
+      <Education/>
+      <Certification/>
+      <Interests/>
     </div>
   );
 }

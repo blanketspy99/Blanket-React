@@ -94,6 +94,10 @@ li > button.nav-link, li > button.nav-link:hover {
   color: inherit;
   background-color: grey;
 }
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #464a4e;
+  border-radius: 10px;
+}
 /* li > button.nav-link:active {
   background-color: darkgray;
 } */
