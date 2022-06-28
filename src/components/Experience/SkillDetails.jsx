@@ -153,6 +153,7 @@ export default function SkillDetails(props) {
               />
               <Sonnet key={4} keys={["SQL", "Motoko"]} rating={[4, 3]} />
               <Sonnet key={5} keys={["Node JS", "JSON/YAML"]} rating={[3, 6]} />
+              <Sonnet key={6} keys={["React JS"]} rating={[5]} />
             </Tab>
             <Tab eventKey="profile" title="Tools & Technologies">
               <Sonnet
