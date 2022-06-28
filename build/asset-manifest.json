@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a61c61c.css",
+    "main.js": "/static/js/main.b3614128.js",
+    "static/media/forestbridge.jpg": "/static/media/forestbridge.b138df8d135b51366682.jpg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1a61c61c.css",
+    "static/js/main.b3614128.js"
+  ]
+}
