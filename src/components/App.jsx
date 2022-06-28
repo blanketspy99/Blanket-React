@@ -4,8 +4,8 @@ import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 // import MyNavigationBar from './MyNavigation';
 import "../App.scss";
-import Body from "./Body";
-import Experience from "./Experience";
+import Body from "./Body/Body";
+import Experience from "./Experience/Experience";
 
 import "../App_custom.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -1,15 +1,15 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 export default function MyNavigationBar() {
   return (
-    <div>
-      <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+    <div className="row">
+      <Navbar fixed="top" sticky="top" className="navbar-fixed-top" collapseOnSelect expand="md" bg="dark" variant="dark">
         {" "}
         {/* bg="dark" variant="dark"*/}
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/">Shahrukh</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -32,7 +32,7 @@ export default function MyNavigationBar() {
             </Nav>
             <Nav>
               {/* <Nav.Link as={NavLink} to="#">More deets</Nav.Link> */}
-              <Nav.Link as={NavLink} eventKey={2} to="#">
+              <Nav.Link as={NavLink} eventKey={2} to="/#">
                 TBD
               </Nav.Link>
             </Nav>

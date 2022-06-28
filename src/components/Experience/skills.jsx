@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Col, Row, Button } from "react-bootstrap";
-import ExperienceDetails from "../experience.json";
-import SkillDetails from "../pages/SkillDetails";
+import ExperienceDetails from "../../experience.json";
+import SkillDetails from "./SkillDetails";
 import ResumeCardTitle from "./ResumeCardTitle";
 
 

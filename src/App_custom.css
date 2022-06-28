@@ -38,66 +38,17 @@
 } */
 /* html {
   overflow: -moz-scrollbars-vertical; 
-  overflow-y: scroll;
+  overflow-y: scroll; 
+  height: 100%;
 } */
 body {
   background-color: skyblue;
+  height: 100%;
 }
 
-.card {
-  border: 0px;
-}
-.Work, .otherProjects {
-  padding-bottom: 0px;
-}
 
-.companyName {
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Style the <hr> element */
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-.btn-link {
-  text-decoration: none;
-  color: inherit;
-}
-.ReactCollapse--collapse {
-  /* max-width: 800px;
-  border: 1px solid rgba(3, 169, 244, 0.3);
-  border-radius: 10px;
-  background-color: rgba(100, 255, 100, 0.1); */
-  transition: height 500ms;
-}
-
-.modal-content {
-  background-color: whitesmoke;
-}
-
-.modal-header, .nav.nav-tabs {
-  border-bottom: 1px solid darkgray;
-}
-
-  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
-    background-color: darkgray;
-    border-color: darkgray darkgray lightgray;
-}
-
-li > button.nav-link, li > button.nav-link:hover {
-  color: inherit;
-  background-color: grey;
-}
-.navbar-dark .navbar-nav .nav-link.active {
-  background-color: #464a4e;
-  border-radius: 10px;
-}
 /* li > button.nav-link:active {
   background-color: darkgray;
 } */
