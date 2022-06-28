@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Blanket-React/static/css/main.5c3ab0dd.css",
-    "main.js": "/Blanket-React/static/js/main.8baa6686.js",
-    "static/media/forestbridge.jpg": "/Blanket-React/static/media/forestbridge.b138df8d135b51366682.jpg",
-    "index.html": "/Blanket-React/index.html"
+    "main.css": "/static/css/main.1a61c61c.css",
+    "main.js": "/static/js/main.a33af494.js",
+    "static/media/forestbridge.jpg": "/static/media/forestbridge.b138df8d135b51366682.jpg",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.5c3ab0dd.css",
-    "static/js/main.8baa6686.js"
+    "static/css/main.1a61c61c.css",
+    "static/js/main.a33af494.js"
   ]
 }
