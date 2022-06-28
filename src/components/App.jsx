@@ -8,14 +8,14 @@ import Body from "./Body/Body";
 import Experience from "./Experience/Experience";
 
 import "../App_custom.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/Layout";
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route exact path="/" element={<Layout />}>
             <Route index element={<Body />} />
             <Route path="experience" element={<Experience />} />
             <Route path="test" element={<Body />} />

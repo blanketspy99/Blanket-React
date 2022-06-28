@@ -10,7 +10,7 @@ export default function MyNavigationBar() {
         {" "}
         {/* bg="dark" variant="dark"*/}
         <Container fluid>
-          <Navbar.Brand href="/"><img src="./favicon.ico" alt="logo" height="30px"></img> Blanket</Navbar.Brand>
+          <Navbar.Brand href={process.env.PUBLIC_URL ?? "/"}><img src={process.env.PUBLIC_URL+"/favicon.ico"} alt="logo" height="30px"></img> Blanket</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
