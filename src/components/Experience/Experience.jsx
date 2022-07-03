@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Dropdown, DropdownButton } from "react-bootstrap";
 import ExperienceDetails from "../../experience.json";
 import parse from "html-react-parser";
 import LinkIcon from "@mui/icons-material/Link";
@@ -198,10 +198,6 @@ export default function Experience() {
               </Row>
               </Card>
           {/* </Container> */}
-          </Col>
-        <Col lg={2} className="d-none d-lg-block"></Col>
-      </Row>  
-          
        <ResumeCardTitle title="Work Experience" id="Experience"> <Card.Text as="ul">
                 {itemList}
             </Card.Text> </ResumeCardTitle>
@@ -217,6 +213,31 @@ export default function Experience() {
       <Education/>
       <Certification/>
       <Interests/> 
+      </Col>
+        <Col lg={2} className="d-none d-lg-block">
+        <div className="mt-4">
+        <center> 
+        <DropdownButton
+    id="dropdown-button-dark-example2"
+    variant="secondary"
+    menuVariant="dark"
+    title="Dropdown button"
+    className="mt-2"
+  >
+    <Dropdown.Item href="#/action-1" active>
+      Action
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+    <Dropdown.Divider />
+    <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
+  </DropdownButton>
+      </center>
+      </div>
+        </Col>
+      </Row>  
+          
+
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 // import ExperienceDetails from "../experience.json";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import { Collapse } from "react-collapse";
@@ -31,11 +31,9 @@ export default function ResumeCardTitle(props){
         toggle(setToggle);
       }
 
-    return <>
-    <Row>
-        <Col lg={2} className="d-none d-lg-block"></Col>
-        <Col lg={8}>
-        {/* <Container fluid="lg"> */}
+    return (
+    <>
+
         <Card>
         <Card.Body>
         <Button
@@ -53,12 +51,9 @@ export default function ResumeCardTitle(props){
             </Card.Body>
         </Card>
 
-        {/* </Container> */}
-        </Col>
-        <Col lg={2} className="d-none d-lg-block"></Col>
 
-    </Row>
         
     </>
+    )
 
 }
