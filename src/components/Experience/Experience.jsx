@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Card, Row, Col, Form, Container } from "react-bootstrap";
+import { Card, Row, Col, Form, Container, Button } from "react-bootstrap";
 // import ExperienceDetails from "../../experience.json";
 import parse from "html-react-parser";
 import LinkIcon from "@mui/icons-material/Link";
@@ -44,6 +44,8 @@ console.log(details);
   details["Work Experience"].forEach((item, index) => {
     itemList.push(
       // <Container  fluid="lg" key={index} className="mb-lg-2">
+      <div style={{pageBreakInside: "avoid"}}>
+
         <Card key={index} bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Role"]}</Card.Title>
@@ -75,7 +77,7 @@ console.log(details);
       
           </Card.Body>
         </Card>
-        
+        </div>
       // </Container> 
     );
   });
@@ -83,6 +85,7 @@ console.log(details);
   details["Other Projects"].forEach((item, index) => {
     otherList.push(
       // <Container  fluid="lg"  key={"other"+index} className="mb-2">
+      <div style={{pageBreakInside: "avoid"}}>
         <Card  key={"other"+index} bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Title"]}</Card.Title>
@@ -117,6 +120,7 @@ console.log(details);
               </ResumeRR>
           </Card.Body>
         </Card>
+        </div>
         
       // </Container>
     );
@@ -137,9 +141,10 @@ console.log(details);
                   <Card.Subtitle as="h5" className="mb-2 text-muted">
                     {details["Primary Title"]}
                   </Card.Subtitle>
-                  <Card.Text as="em">
+                  <span className="printSummary">{details['Objective Summary']}</span>
+                  <Card.Text as="em" className="reactreadmoreless">
                   <ReactReadMoreReadLess
-        charLimit={200}
+        charLimit={201}
         readMoreText={"Read more ▼"}
         readLessText={"Read less ▲"}
         readMoreClassName="read-more-less--more"
@@ -240,12 +245,21 @@ console.log(details);
     <option value="">Default</option>
   <option value={"exp2"}> Exp 2 </option>
   </Form.Select>
-      </center>
+  </center>
+  <br></br>
+  <hr></hr>
+  <br></br>
+  <Button variant="secondary" onClick={() => window.print()}> PRINT </Button>
+          {/* <button onClick={() => window.print()}>PRINT</button> */}
+          <br></br>
+        <em>Click to open print dialog and select "Save to PDF"</em>
+
+
+
+
       </div>
         </Col>
       </Row> </Container> : <Spinner color="blue" type="spin"></Spinner> }
-          
-
     </>
   );
 }

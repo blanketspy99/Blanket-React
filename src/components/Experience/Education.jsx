@@ -35,10 +35,12 @@ export default function Education(props){
 
 
     return <>
+            <div style={{pageBreakInside: "avoid"}}>
+
     <ResumeCardTitle title="Education" id="Education">
         {educationList}
     </ResumeCardTitle>
-      
+      </div>
     </>
 
 }

@@ -33,6 +33,8 @@ export default function Skills(props) {
 
   return (
     <>
+            <div style={{pageBreakInside: "avoid"}}>
+
     <ResumeCardTitle title="Skills" id="skills">
     <Card.Text as="ul">
                     <Row>
@@ -55,6 +57,7 @@ export default function Skills(props) {
                 </Button>
                   </Card.Text>
     </ResumeCardTitle>
+    </div>
 
       { show && <SkillDetails onClose={setShow}/>}
     </>

@@ -13,6 +13,8 @@ export default function Interests(){
     };
 
     return <>
+            <div style={{pageBreakInside: "avoid"}}>
+
         <ResumeCardTitle title="Interests" id="Interests">
             <Card>
                 <Card.Body>
@@ -29,6 +31,7 @@ export default function Interests(){
             </Card>
 
         </ResumeCardTitle>
+        </div>
 
     </>
 }

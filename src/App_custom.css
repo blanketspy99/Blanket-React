@@ -52,3 +52,18 @@ body {
 /* li > button.nav-link:active {
   background-color: darkgray;
 } */
+
+@media print {
+  .ReactCollapse--collapse {
+    height: auto !important;
+  }
+  body { 
+    -webkit-print-color-adjust: exact; 
+    color-adjust: exact;
+  }
+  .navbar {
+    display: none;
+  }
+  @page { margin: 0;
+    size: A3; }
+} 

@@ -63,3 +63,15 @@ hr {
   .read-more-less--less {
     color: #999;
   }
+  .printSummary {
+    display: none;
+  }
+
+  @media print {
+    .reactreadmoreless {
+    display: none;
+  }
+  .printSummary {
+    display: block;
+  }
+  }

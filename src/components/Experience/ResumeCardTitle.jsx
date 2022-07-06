@@ -33,7 +33,6 @@ export default function ResumeCardTitle(props){
 
     return (
     <>
-
         <Card>
         <Card.Body>
         <Button
@@ -46,11 +45,12 @@ export default function ResumeCardTitle(props){
             <ArrowDropDownOutlinedIcon style={toggle.style} /></Card.Title>
             </Button>
             <Collapse isOpened={toggle.state}>
+            
            {props.children}
             </Collapse>
             </Card.Body>
-        </Card>
 
+        </Card>
 
         
     </>
