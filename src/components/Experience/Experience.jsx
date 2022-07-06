@@ -1,6 +1,7 @@
-import React from "react";
-import { Card, Row, Col, Dropdown, DropdownButton } from "react-bootstrap";
-import ExperienceDetails from "../../experience.json";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Card, Row, Col, Form, Container } from "react-bootstrap";
+// import ExperienceDetails from "../../experience.json";
 import parse from "html-react-parser";
 import LinkIcon from "@mui/icons-material/Link";
 import MailIcon from "@mui/icons-material/Mail";
@@ -15,15 +16,32 @@ import ResumeRR from "./ResumeRR";
 import Interests from "./Interests";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import "./Experience.css";
+// import ReactLoading from "react-loading"
+import Spinner from "../Spinner/spinner";
 
 export default function Experience() {
-  // console.log(newActive);
-  // const [activeIndex, setActiveIndex] = useState(null);
 
+  const [details, setDetails] = useState();
+  const [val, setVal] = useState();
 
+  useEffect(() => {
+    console.log(val);
+    if (val){
+      console.log(val);
+      setDetails(JSON.parse(localStorage.getItem(val)));
+    }
+    else {
+      axios.get(process.env.PUBLIC_URL+"/experience.json").then((response) => {
+        setDetails(response.data);
+      })     }
+
+    }, [val]);
+console.log(details);
 
   let itemList = [];
-  ExperienceDetails["Work Experience"].forEach((item, index) => {
+  let otherList = [];
+  if (details) {
+  details["Work Experience"].forEach((item, index) => {
     itemList.push(
       // <Container  fluid="lg" key={index} className="mb-lg-2">
         <Card key={index} bg="white">
@@ -62,8 +80,7 @@ export default function Experience() {
     );
   });
 
-  let otherList = [];
-  ExperienceDetails["Other Projects"].forEach((item, index) => {
+  details["Other Projects"].forEach((item, index) => {
     otherList.push(
       // <Container  fluid="lg"  key={"other"+index} className="mb-2">
         <Card  key={"other"+index} bg="white">
@@ -104,20 +121,21 @@ export default function Experience() {
       // </Container>
     );
   });
-
+  }
 
   return (
     <>
-    
+    {details ? 
+    <Container fluid>
       <Row>
         <Col lg={2} className="d-none d-lg-block"></Col>
         <Col lg={8}>
           {/* <Container fluid="lg"> */}
               <Card>
                 <Card body>
-                  <Card.Title as="h1">{ExperienceDetails['Name']}</Card.Title>
+                  <Card.Title as="h1">{details['Name']}</Card.Title>
                   <Card.Subtitle as="h5" className="mb-2 text-muted">
-                    {ExperienceDetails["Primary Title"]}
+                    {details["Primary Title"]}
                   </Card.Subtitle>
                   <Card.Text as="em">
                   <ReactReadMoreReadLess
@@ -126,7 +144,7 @@ export default function Experience() {
         readLessText={"Read less ▲"}
         readMoreClassName="read-more-less--more"
         readLessClassName="read-more-less--less">
-                    {ExperienceDetails['Objective Summary']}
+                    {details['Objective Summary']}
                     </ReactReadMoreReadLess>
                     
                   </Card.Text>
@@ -148,7 +166,7 @@ export default function Experience() {
                   {" "}
                   <a href="mailto:shahrukh690432@gmail.com">
                     <MailIcon style={{ marginLeft: "16px" }} />{" "}
-                    {ExperienceDetails["Email"]}
+                    {details["Email"]}
                   </a>
                 </Col>
                 <Col
@@ -160,7 +178,7 @@ export default function Experience() {
                   {" "}
                   <a href="tel:+919430162671">
                     <PhoneIphoneIcon style={{ marginLeft: "16px" }} />{" "}
-                    {ExperienceDetails["Telephone"]}{" "}
+                    {details["Telephone"]}{" "}
                   </a>
                 </Col>
                 <Col
@@ -171,11 +189,11 @@ export default function Experience() {
                 >
                   {" "}
                   <a
-                    href={"https://www.google.com/maps?q="+ExperienceDetails["Location"]}
+                    href={"https://www.google.com/maps?q="+details["Location"]}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MyLocationIcon style={{ marginLeft: "16px" }} /> {ExperienceDetails["Location"]}
+                    <MyLocationIcon style={{ marginLeft: "16px" }} /> {details["Location"]}
                   </a>
                 </Col>
                 <Col
@@ -185,12 +203,12 @@ export default function Experience() {
                   className="text-sm-start my-2 px-md-3"
                 >
                   <a
-                    href={"https://www."+ExperienceDetails["LinkedIn"]}
+                    href={"https://www."+details["LinkedIn"]}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <LinkedInIcon style={{ marginLeft: "16px" }} />{" "}
-                    {ExperienceDetails["LinkedIn"]}{" "}
+                    {details["LinkedIn"]}{" "}
                   </a>
                 </Col>
     
@@ -209,35 +227,26 @@ export default function Experience() {
           
 
 
-      <Skills/>
-      <Education/>
-      <Certification/>
-      <Interests/> 
+      <Skills exp={details}/>
+      <Education exp={details}/>
+      <Certification exp={details}/>
+      <Interests exp={details}/> 
       </Col>
         <Col lg={2} className="d-none d-lg-block">
         <div className="mt-4">
         <center> 
-        <DropdownButton
-    id="dropdown-button-dark-example2"
-    variant="secondary"
-    menuVariant="dark"
-    title="Dropdown button"
-    className="mt-2"
-  >
-    <Dropdown.Item href="#/action-1" active>
-      Action
-    </Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-    <Dropdown.Divider />
-    <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-  </DropdownButton>
+        
+  <Form.Select disabled onChange={(valu)=>(setVal(valu.target.value))}>
+    <option value="">Default</option>
+  <option value={"exp2"}> Exp 2 </option>
+  </Form.Select>
       </center>
       </div>
         </Col>
-      </Row>  
+      </Row> </Container> : <Spinner color="blue" type="spin"></Spinner> }
           
 
     </>
   );
 }
+

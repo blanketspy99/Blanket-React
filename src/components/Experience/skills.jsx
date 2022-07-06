@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Card, Col, Row, Button } from "react-bootstrap";
-import ExperienceDetails from "../../experience.json";
+// import ExperienceDetails from "../../experience.json";
 import SkillDetails from "./SkillDetails";
 import ResumeCardTitle from "./ResumeCardTitle";
 
 
-export default function Skills() {
-  const skillDetails = ExperienceDetails["Skills"];
+export default function Skills(props) {
+  const skillDetails = props.exp["Skills"];
   const skillTypes = Object.keys(skillDetails);
   const skillTypesCount = skillTypes.length;
   const [show, setShow] = useState(false);

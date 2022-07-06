@@ -1,15 +1,15 @@
 import React from "react";
-import ExperienceDetails from "../../experience.json";
+// import ExperienceDetails from "../../experience.json";
 import { Card, Container } from "react-bootstrap";
 import { FiExternalLink } from 'react-icons/fi';
 import ResumeCardTitle from "./ResumeCardTitle";
 
 
 
-export default function Education(){
+export default function Education(props){
 
       let educationList=[];
-      ExperienceDetails["Education"].forEach((item, index) => {
+      props.exp["Education"].forEach((item, index) => {
           educationList.push(
           <Container  fluid="lg"  key={"education"+index} className="mb-2">
           <Card bg="white">

@@ -6,9 +6,10 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.scss";
 import Body from "./Body/Body";
 import Experience from "./Experience/Experience";
+import Spinner from "./Spinner/spinner";
 
 import "../App_custom.css";
-import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/Layout";
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
           <Route exact path="/" element={<Layout />}>
             <Route index element={<Body />} />
             <Route path="experience" element={<Experience />} />
-            <Route path="test" element={<Body />} />
+            <Route path="test" element={<Spinner />} />
             {/* <Route path="contact" element={<Contact />} /> */}
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>

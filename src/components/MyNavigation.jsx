@@ -4,17 +4,20 @@ import { NavLink } from 'react-router-dom';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 export default function MyNavigationBar() {
+  console.log(process.env.PUBLIC_URL);
   return (
+    <Container fluid>
     <div className="row">
-      <Navbar fixed="top" sticky="top" className="navbar-fixed-top" collapseOnSelect expand="md" bg="dark" variant="dark">
+      <Navbar sticky="top" className="navbar-fixed-top" collapseOnSelect expand="md" bg="dark" variant="dark">
         {" "}
         {/* bg="dark" variant="dark"*/}
-        <Container fluid>
-          <Navbar.Brand href={process.env.PUBLIC_URL ?? "/"}><img src={process.env.PUBLIC_URL+"/favicon.ico"} alt="logo" height="30px"></img> Blanket</Navbar.Brand>
+          {/* <Container fluid> */}
+          <Navbar.Brand href={process.env.PUBLIC_URL+"/"}><img src={process.env.PUBLIC_URL+"/favicon.ico"} alt="logo" height="30px"></img> Blanket</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to="experience">Resume</Nav.Link>
+              <Nav.Link as={NavLink} to={process.env.PUBLIC_URL+"/experience#"} eventKey={1}>Resume</Nav.Link>
+              {/* <Nav.Link href="experience">Resume</Nav.Link> */}
               <Nav.Link as="a" href="https://github.com/blanketspy99" target="_blank">Repos</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -33,12 +36,13 @@ export default function MyNavigationBar() {
             <Nav>
               {/* <Nav.Link as={NavLink} to="#">More deets</Nav.Link> */}
               <Nav.Link as={NavLink} eventKey={2} to="/#">
-                TBD
+                Home
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+          {/* </Container> */}
       </Navbar>
     </div>
+    </Container>
   );
 }
