@@ -252,7 +252,7 @@ console.log(details);
   <Button variant="secondary" onClick={() => window.print()}> PRINT </Button>
           {/* <button onClick={() => window.print()}>PRINT</button> */}
           <br></br>
-        <em>Click to open print dialog and select "Save to PDF"</em>
+        <em>Download??..Click to open print dialog and select "Save to PDF"</em>
 
 
 
