@@ -3,7 +3,7 @@ import axios from "axios";
 import { Card, Row, Col, Form, Container, Button } from "react-bootstrap";
 // import ExperienceDetails from "../../experience.json";
 import parse from "html-react-parser";
-import LinkIcon from "@mui/icons-material/Link";
+import { FiExternalLink } from 'react-icons/fi';
 import MailIcon from "@mui/icons-material/Mail";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
@@ -51,9 +51,13 @@ console.log(details);
             <Card.Title as="h4">{item["Role"]}</Card.Title>
             <Card.Subtitle as="p" className="companyName">
               {item["Company Name"]} - {item["Client Name"]} Client{" "}
-              <a href={item["Company Website"]}>
-                <LinkIcon />{" "}
-              </a>{" "}
+              {" "} <a
+                  href={item["Company Website"]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiExternalLink/>{" "}
+                </a>
             </Card.Subtitle>
             <Row>
             <Col className="text-muted col-6">
