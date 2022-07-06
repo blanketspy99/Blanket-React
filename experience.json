@@ -1,0 +1,146 @@
+{
+    "Name": "Shahrukh Shaik",
+    "Primary Title": "Senior Software Engineer",
+    "Objective Summary": "Polyglot developer, Consultant, primarly a DevOps/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
+    "Email": "shahrukh690432@gmail.com",
+    "LinkedIn": "linkedin.com/in/shahrukh432",
+    "Telephone": "+91-9430162671",
+    "Location": "Hyderabad, India",
+    "WebVersion": "https://blanketspy99.github.io/Blanket-React/#/experience",
+    "Work Experience":[{
+        "Company Name": "Happiest Minds Technologies",
+        "Client Name": "TE Connectivity",
+        "Role": "Senior Platform Engineer",
+        "Start Month Year": "2021/09 ",
+        "End Month Year": "None",
+        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
+        "Created code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
+        "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, RDS, Aurora, Lambda,IAM, Secrets, KMS keys.",
+        "Worked on standardization of IAM user role policies of various personas like support, admin and development.",
+        "Working on Cloud Economics Program which focuses on budgeting, cost analysis and savings on AWS Resources. "
+        ],
+        "Location": "Bangalore, India",
+        "Company Website": "https://www.happiestminds.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "BP",
+        "Role": "DevOps Engineer (Platform Lead)",
+        "Start Month Year": "01/2020 ",
+        "End Month Year": " 08/2021",
+        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
+        "<b>Implemented CI/CD pipelines</b> using Azure DevOps in AWS within Informatica for automated code deployments, unit tests and quality review checks which significantly reduced the deployment time by <b>50%</b>.",
+        "<b>Certified Wipro DevOps Professional</b>.",
+        "Experience in Python application building, packaging and deploying and containerizing the same.",
+        "Upgraded all the Informatica Application systems from <b>On-Premise (9.5) to Cloud AWS (10.2/10.4)</b>. This includes procuring of new instances, configuration and installation of Informatica applications and their dependencies.",
+        "Assist in upgrading the On-Premise applications to AWS for upstream business and for any other Informatica application identified for upgrade and migration to AWS."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "BP",
+        "Role": "Machine Learning Practitioner (DataIku)",
+        "Start Month Year": "10/2020 ",
+        "End Month Year": " 08/2021",
+        "TaskAchievements": ["Responsible for data ingestion from various data sources (big data), data <b>cleansing</b> and data <b>wrangling</b>.",
+        "Created <b>real time</b> prediction endpoint API's from the models deployed.",
+        "Experience on working with Python SAP PyRFC module for PFI/PRI Journal Posting.",
+        "Created end to end <b>automated infrastructure deployment</b> in <b>AWS</b> using <b>Azure DevOps</b> pipelines and <b>Ansible</b>, this includes from procurement of EC2 instance to installation, configuration, till consumption.",
+        "<b>Certified DataIku Machine Learning Practitioner and L2 Advance Design and Data Science</b>.",
+        "Have been recognized in the category of <b>'THE GAME CHANGER'</b>. This award is to recognize for Impressive and unique contributions to deliver exceptional results for the business and the organization."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "BP",
+        "Role": "Senior Project Engineer",
+        "Start Month Year": "05/2019 ",
+        "End Month Year": " 01/2020",
+        "TaskAchievements": ["<b>Subject Matter Expert (SME)</b> for Informatica Hosting, Architecture and Administration.",
+        "<b>Platform lead</b> for <b>BP Cloud Migration (Digital Foundations) Programme</b> for movement of complex Informatica architecture consisting of more than 40+ applications all over the world.",
+        "Designed and implemented entire Informatica Architecture in AWS Cloud with HA and DR capabilities.",
+        "Worked as <b>Data Analyst</b> involved in developing Informatica mappings, workflows and transformations.",
+        "Responsible for implementation of <b>DevOps culture</b> in Informatica PowerCenter & Data Quality Environment.",
+        "Gained hands-on experience on <b>Apache Spark in Python</b> in Native AWS and <b>Palantir</b> as part of POC in Big Data on behalf of Wipro for BP.",
+        "Lead many service improvement initiatives, and delivered expected turn around in operations and project deliveries.",
+        "Appreciated with <b>Inspiring Performance Badge</b> by the DM of the project."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "BP",
+        "Role": "Project Engineer",
+        "Start Month Year": "08/2017 ",
+        "End Month Year": " 05/2019",
+        "TaskAchievements": ["Worked as <b>Infrastructure Engineer</b>. Worked as L1 and L2 support for UNIX systems in AWS RHEL servers.",
+        "Created AWS CloudFormation standard template for spinning of EC2 instance along with bootstrapping, SNS subscription and cloudwatch metrics configuration.",
+        "Built automated email status & alert monitoring scripts for server, application jobs using HTML, CSS and Unix Shell Scripting.",
+        "Developed Informatica Automated Code Migration which eventually helped the admin team and developers by minimizing the efforts up to <b>90%</b> and faster code promotions.",
+        "Responsible for quality review checks for Informatica code and OS shell and python scripts.",
+        "Hands-on experience on ETL/ELT tools like <b>DataStage, Talend DI, Dell Boomi (certified) and Informatica PowerCenter</b>.",
+        "Created an automation tool for New Informatica Project Setup thereby a new project onboard will be done in 5 minutes.",
+        "Informatica Admin Activities includes installation/ upgrades, user creation/removal, user audit, user groups, creation/deletion/updating services, procuring & installing SSL certificates, planned & unplanned outages and all other miscellaneous activities. ( Proficiency Level: Expert )",
+        "Worked closely with development and testing teams to implement Bug fixes in Non-Productions and Production environments.",
+        "Gained experience in Incident Management, Problem Management, and Change Management Processes."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    }
+    ],
+    "Other Projects": [{
+        "Title": "Automation Portal",
+        "Sub Title": "ES Portal - A self-service portal for all admin, monitoring and automation activities for Informatica Service Line.",
+        "Start Month Year": "03/2020",
+        "End Month Year": "04/2021",
+        "Location": "Hyderabad, India",
+        "Description": "Acted as Technical Lead and Developer for development of ES Portal over the team of 4.",
+        "Roles and Responsibilities": ["Development, design and Implementation of ES Portal for all the hosting and admin activities over the service line using technologies like <b>JS, Angular and PHP in AWS</b>.",
+        "Integrated with Azure DevOps CI/CD for automated code deployments working in agile methodology by creating dynamic pipelines and <b>Azure Rest API</b>.",
+        "Enabled auto-scaling, load balancer using AWS route53 along with the integration of Azure AD and Service-Now."
+        ]
+    }
+    ],
+    "Skills": {
+        "Languages & Scripting": "Python, Core Java & Shell Scripting, Java Script, Pyspark, Pandas, NumPy",
+        "Operating systems": "Linux and Windows",
+        "SCM": "GIT, GITEA, Azure Repos",
+        "Container Orchestration": "Docker Swarm, Kubernetes",
+        "Build Tools": "Maven, py bdist_wheel, npm",
+        "Databases": "Oracle, MySQL",
+        "CI/CD Orchestration": "Azure DevOps, Jenkins, Code Build & Code Pipeline",
+        "Other Tools": "Sonar, JFrog, Putty, WinScp, Toad, Sql Developer, Visual Studio, Jupyter, Spyder",
+        "Container Tools": "Docker",
+        "Utilities": "BMC Remedy, Service Now, Jira",
+        "Cloud Services": "AWS, Azure",
+        "ETL/ELT Tools": "Informatica PowerCenter, DataStage, Talend DI, Dell Boomi & DataIku",
+        "Configuration Management": "Ansible, CloudFormation, Troposphere",
+        "Domain": "Energy"
+    },
+    "Education":[
+        {
+        "Degree": "Bachelor of Technology",
+        "Specialization": "Civil Engineering",
+        "Website": "https://www.iitism.ac.in/",
+        "University": "Indian Institute of Technology (Indian School of Mines), Dhanbad",
+        "Start Month Year": "07/2013",
+        "End Month Year": "05/2017",
+        "Grade": "7.8/10"
+    },
+    {
+        "Degree": "Higher Secondary Education",
+        "Specialization": "MPC",
+        "University": "Sri Chaitanya Junior Kalasala, Vijayawada",
+        "Start Month Year": "03/2011",
+        "End Month Year": "05/2013",
+        "Grade": "91.8%"
+    }
+],
+    "Certifications": [
+        "Dell Boomi Professional Developer",
+        "DataIku Advance Designer and Administrator L2",
+        "DataIku Machine Learning Practitioner",
+        "Wipro DevOps Professional"
+    ]
+}
