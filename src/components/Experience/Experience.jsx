@@ -25,9 +25,7 @@ export default function Experience() {
   const [val, setVal] = useState();
 
   useEffect(() => {
-    console.log(val);
     if (val){
-      console.log(val);
       setDetails(JSON.parse(localStorage.getItem(val)));
     }
     else {
@@ -36,7 +34,6 @@ export default function Experience() {
       })     }
 
     }, [val]);
-console.log(details);
 
   let itemList = [];
   let otherList = [];
@@ -44,9 +41,9 @@ console.log(details);
   details["Work Experience"].forEach((item, index) => {
     itemList.push(
       // <Container  fluid="lg" key={index} className="mb-lg-2">
-      <div style={{pageBreakInside: "avoid"}}>
+      <div key={index} style={{pageBreakInside: "avoid"}}>
 
-        <Card key={index} bg="white">
+        <Card bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Role"]}</Card.Title>
             <Card.Subtitle as="p" className="companyName">
@@ -89,8 +86,8 @@ console.log(details);
   details["Other Projects"].forEach((item, index) => {
     otherList.push(
       // <Container  fluid="lg"  key={"other"+index} className="mb-2">
-      <div style={{pageBreakInside: "avoid"}}>
-        <Card  key={"other"+index} bg="white">
+      <div   key={"other"+index} style={{pageBreakInside: "avoid"}}>
+        <Card bg="white">
           <Card.Body>
             <Card.Title as="h4">{item["Title"]}</Card.Title>
             <Card.Subtitle as="p" className="companyName">
@@ -240,7 +237,8 @@ console.log(details);
       <Education exp={details}/>
       <Certification exp={details}/>
       <Interests exp={details}/> 
-      <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']}>here</a> </em> 
+      <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']} target="_blank"
+                    rel="noopener noreferrer">here</a> </em> 
       </Col>
         <Col lg={2} className="d-none d-lg-block">
         <div className="mt-4">

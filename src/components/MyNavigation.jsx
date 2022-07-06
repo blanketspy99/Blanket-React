@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 export default function MyNavigationBar() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <Container fluid>
     <div className="row">
@@ -16,7 +15,7 @@ export default function MyNavigationBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to={process.env.PUBLIC_URL+"/experience#"} eventKey={1}>Resume</Nav.Link>
+              <Nav.Link as={NavLink} to={"experience"} eventKey={1}>Resume</Nav.Link>
               {/* <Nav.Link href="experience">Resume</Nav.Link> */}
               <Nav.Link as="a" href="https://github.com/blanketspy99" target="_blank">Repos</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
