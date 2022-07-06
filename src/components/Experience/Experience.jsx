@@ -240,6 +240,7 @@ console.log(details);
       <Education exp={details}/>
       <Certification exp={details}/>
       <Interests exp={details}/> 
+      <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']}>here</a> </em> 
       </Col>
         <Col lg={2} className="d-none d-lg-block">
         <div className="mt-4">
