@@ -237,7 +237,7 @@ export default function Experience() {
       <Education exp={details}/>
       <Certification exp={details}/>
       <Interests exp={details}/> 
-      <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']} target="_blank"
+      <em className="d-none d-print-block">Web version of this resume is available @ <a href={details['WebVersion']} target="_blank"
                     rel="noopener noreferrer">https://blanketspy99.github.io/Blanket-React/#/experience</a> </em> 
       </Col>
         <Col lg={2} className="d-none d-lg-block">
