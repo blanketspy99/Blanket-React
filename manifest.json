@@ -3,9 +3,9 @@
   "name": "Blanket Resume",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon64.png",
       "sizes": "64x64",
-      "type": "image/x-icon",
+      "type": "image/png",
       "purpose": "any"
     }
   ],
