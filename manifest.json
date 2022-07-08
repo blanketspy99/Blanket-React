@@ -20,8 +20,8 @@
       "url": "/#/experience",
       "icons": [
         {
-          "src": "./Assets.xcassets/AppIcon.appiconset/192.png",
-          "sizes": "192x192",
+          "src": "./Assets.xcassets/AppIcon.appiconset/196.png",
+          "sizes": "196x196",
           "type": "image/png",
           "purpose": "any"
         },
