@@ -9,7 +9,7 @@ import Experience from "./Experience/Experience";
 import Spinner from "./Spinner/spinner";
 
 import "../App_custom.css";
-import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/Layout";
 export default function App() {
   return (
