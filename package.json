@@ -2,7 +2,7 @@
   "name": "my-portal",
   "version": "1.2.0",
   "private": true,
-  "homepage": "https://blanketspy99.github.io/Blanket-React",
+  "homepage": "/Blanket-React",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",

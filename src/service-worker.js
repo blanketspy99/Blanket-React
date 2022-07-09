@@ -7,6 +7,7 @@
 // You can also remove this file if you'd prefer not to use a
 // service worker, and the Workbox build step will be skipped.
 
+import { SwipeLeft } from '@mui/icons-material';
 import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
@@ -38,7 +39,7 @@ registerRoute(
     } // If this looks like a URL for a resource, because it contains // a file extension, skip.
 
     if (url.pathname.match(fileExtensionRegexp)) {
-      return true;
+      return false;
     } // Return true to signal that we want to use the handler.
 
     return true;
@@ -68,6 +69,11 @@ self.addEventListener('message', (event) => {
     self.skipWaiting();
   }
 });
-registerRoute(new RegExp('.*\\.(json|svg|ico|jpg)'), new CacheFirst());
+// registerRoute(new RegExp('.*\\.(json|svg|ico|jpg)'));
+registerRoute(new RegExp('.*\\.(js|json|ico|css|webp|png|svg|jpg)'),new StaleWhileRevalidate());
 
-// Any other custom service worker logic can go here.
+// registerRoute(
+//     /\.(?:js|json|ico|css|webp|png|svg)$/,
+//       new StaleWhileRevalidate()
+//       );
+
