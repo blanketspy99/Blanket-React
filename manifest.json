@@ -1,5 +1,5 @@
 {
-  "start_url": "/Blanket-React/",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
   
@@ -1319,7 +1319,7 @@
   ],
   "name": "Blanket",
   "short_name": "Blanket",
-  "id": "/Blanket-React",
+  "id": "Blanket-React",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "shortcuts": [
