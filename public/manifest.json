@@ -1,5 +1,5 @@
 {
-  "start_url": "/",
+  "start_url": "https://blanketspy99.github.io",
   "display": "standalone",
   "orientation": "portrait-primary",
   
@@ -1326,7 +1326,7 @@
     {
       "name": "Experience",
       "short_name": "Resume",
-      "url": "/experience",
+      "url": "/#/experience",
       "icons": [
         {
           "src": "meta/android/android-launchericon-192-192.png",
