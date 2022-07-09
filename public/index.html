@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using React JavaScript"
-    />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials"/>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
 
-    <title>My Blanket</title>
+<head>
     <title>Blanket Resume</title>
 <meta name="description" content="">
 
-<link href="css/addtohomescreen.min.css" rel="stylesheet">
+<link href="a2hs/addtohomescreen.css" rel="stylesheet">
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,10 +53,70 @@
 
 <meta name="theme-color" content="#000000">
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  
-  </body>
+<link rel="manifest" href="manifest.json">
+<meta name="generator" content="PWA Starter">
+</head>
+
+<body>
+
+    <!-- Common Add to Homescreen Template -->
+    <div class="ath-container banner-bottom-center">
+        <div class="ath-banner">
+            <div class="ath-banner-cell">
+                <img src="imgs/pwa-logo-50x50.png" alt="PWA" class="ath-prompt-logo">
+            </div>
+            <div class="ath-banner-title">
+                <p>Install this PWA?</p>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-cancel btn-link">Not Now</button>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-install btn-success">Install</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="a2hs/addtohomescreen.min.js" type="application/javascript"></script>
+
+        <script src="a2hs/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen( {
+            appID: "blanket",
+            appName: "Blanket Resume",
+            lifespan: 15,
+	startDelay:0,
+            autostart: true,
+            minSessions: 1,
+            displayPace: 0,
+            customPrompt: {
+                title: "Install Blanket Resume?",
+                src: "meta/favicon-96x96.png",
+                cancelMsg: "Cancel",
+                installMsg: "Install"
+            }
+        } );
+    </script>
+    <script>
+        if ( "serviceWorker" in navigator ) {
+
+            navigator.serviceWorker.register( "/sw.js" )
+                .then( function ( registration ) { // Registration was successful
+
+                    console.log( "ServiceWorker registration successful with scope: ", registration.scope );
+
+                } ).catch( function ( err ) { // registration failed :(
+
+                    console.log( "ServiceWorker registration failed: ", err );
+
+                } );
+
+        }
+    </script>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    
+</body>
+
 </html>
