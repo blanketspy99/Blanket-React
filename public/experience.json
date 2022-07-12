@@ -115,7 +115,7 @@
         "Utilities": "BMC Remedy, Service Now, Jira",
         "Cloud Services": "AWS, Azure",
         "ETL/ELT Tools": "Informatica PowerCenter, DataStage, Talend DI, Dell Boomi & DataIku",
-        "Configuration Management": "Ansible, CloudFormation, Troposphere",
+        "Configuration Management": "Ansible, CloudFormation, Troposphere, Terraform",
         "Domain": "Energy"
     },
     "Education":[
