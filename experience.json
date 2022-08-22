@@ -1,7 +1,7 @@
 {
     "Name": "Shahrukh Shaik",
-    "Primary Title": "Senior Software Engineer",
-    "Objective Summary": "Polyglot developer, Consultant, primarly a DevOps/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
+    "Primary Title": "Senior Machine Learning Engineer",
+    "Objective Summary": "Polyglot developer, Consultant, primarly a Dev(ML)Ops/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
     "Email": "shahrukh690432@gmail.com",
     "LinkedIn": "linkedin.com/in/shahrukh432",
     "Telephone": "+91-9430162671",
@@ -10,33 +10,18 @@
     "Work Experience":[{
         "Company Name": "Happiest Minds Technologies",
         "Client Name": "TE Connectivity",
-        "Role": "Senior Platform Engineer",
+        "Role": "Senior Platform Engineer (MLOps)",
         "Start Month Year": "2021/09 ",
         "End Month Year": "None",
         "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
         "Created code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
         "Working as MLOps engineer, building pipelines for end-to-end Model lifecycle using native AWS services",
-        "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, RDS, Aurora, Lambda,IAM, Secrets, KMS keys.",
+        "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, ECS, RDS, Lambda,IAM, Secrets, KMS keys etc.,",
         "Worked on standardization of IAM user role policies of various personas like support, admin and development.",
         "Working on Cloud Economics Program which focuses on budgeting, cost analysis and savings on AWS Resources. "
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.happiestminds.com"
-    },
-    {
-        "Company Name": "Wipro Limited",
-        "Client Name": "BP",
-        "Role": "DevOps Engineer (Platform Lead)",
-        "Start Month Year": "01/2020 ",
-        "End Month Year": " 08/2021",
-        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
-        "<b>Implemented CI/CD pipelines</b> using Azure DevOps in AWS within Informatica for automated code deployments, unit tests and quality review checks which significantly reduced the deployment time by <b>50%</b>.",
-        "<b>Certified Wipro DevOps Professional</b>.",
-        "Experience in Python application building, packaging and deploying and containerizing the same.",
-        "Upgraded all the Informatica Application systems from <b>On-Premise (9.5) to Cloud AWS (10.2/10.4)</b>. This includes procuring of new instances, configuration and installation of Informatica applications and their dependencies.",
-        "Assist in upgrading the On-Premise applications to AWS for upstream business and for any other Informatica application identified for upgrade and migration to AWS."],
-        "Location": "Hyderabad, India",
-        "Company Website": "https://www.wipro.com"
     },
     {
         "Company Name": "Wipro Limited",
@@ -50,6 +35,21 @@
         "Created end to end <b>automated infrastructure deployment</b> in <b>AWS</b> using <b>Azure DevOps</b> pipelines and <b>Ansible</b>, this includes from procurement of EC2 instance to installation, configuration, till consumption.",
         "<b>Certified DataIku Machine Learning Practitioner and L2 Advance Design and Data Science</b>.",
         "Have been recognized in the category of <b>'THE GAME CHANGER'</b>. This award is to recognize for Impressive and unique contributions to deliver exceptional results for the business and the organization."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "BP",
+        "Role": "DevOps Engineer (Platform Lead)",
+        "Start Month Year": "01/2020 ",
+        "End Month Year": " 08/2021",
+        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
+        "<b>Implemented CI/CD pipelines</b> using Azure DevOps in AWS within Informatica for automated code deployments, unit tests and quality review checks which significantly reduced the deployment time by <b>50%</b>.",
+        "<b>Certified Wipro DevOps Professional</b>.",
+        "Experience in Python application building, packaging and deploying and containerizing the same.",
+        "Upgraded all the Informatica Application systems from <b>On-Premise (9.5) to Cloud AWS (10.2/10.4)</b>. This includes procuring of new instances, configuration and installation of Informatica applications and their dependencies.",
+        "Assist in upgrading the On-Premise applications to AWS for upstream business and for any other Informatica application identified for upgrade and migration to AWS."],
         "Location": "Hyderabad, India",
         "Company Website": "https://www.wipro.com"
     },
