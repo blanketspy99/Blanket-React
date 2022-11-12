@@ -7,12 +7,27 @@
     "Telephone": "+91-9430162671",
     "Location": "Hyderabad, India",
     "WebVersion": "https://blanketspy99.github.io/#/experience",
-    "Work Experience":[{
+    "Work Experience":[
+    {
+        "Company Name": "Sprinklr",
+        "Client Name": "",
+        "Role": "Senior DevOps Engineer",
+        "Start Month Year": "2022/09 ",
+        "End Month Year": "None",
+        "TaskAchievements": ["Responsible for implementing resilience, fault tolerant and High Availabilty systems.",
+        "Working on stabilising the kafka cluster such as addition/removal of ad-hoc nodes to cluster on the go, proper managment of topics and its partitions.",
+        "Written re-usable python modules contributing as single source code repository within entire organisation.",
+        "Worked on K8s cluster management and deployments, primarily using <b>helm charts</b>."
+        ],
+        "Location": "Bangalore, India",
+        "Company Website": "https://www.sprinklr.com"
+    },
+    {
         "Company Name": "Happiest Minds Technologies",
         "Client Name": "TE Connectivity",
         "Role": "Senior Data Scientist (ML Engineer)",
         "Start Month Year": "2021/09 ",
-        "End Month Year": "None",
+        "End Month Year": "2022/09",
         "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
         "Created code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
         "Working as MLOps engineer, building pipelines for end-to-end Model lifecycle using native AWS services",
