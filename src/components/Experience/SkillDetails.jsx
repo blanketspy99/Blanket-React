@@ -151,7 +151,7 @@ export default function SkillDetails(props) {
                 keys={["HTML", "CSS (Bootstrap)"]}
                 rating={[5, 5]}
               />
-              <Sonnet key={4} keys={["SQL", "Motoko"]} rating={[4, 3]} />
+              <Sonnet key={4} keys={["SQL", "Motoko"]} rating={[4, 2]} />
               <Sonnet key={5} keys={["Node JS", "JSON/YAML"]} rating={[3, 6]} />
               <Sonnet key={6} keys={["React JS"]} rating={[5]} />
             </Tab>
@@ -161,7 +161,7 @@ export default function SkillDetails(props) {
                 keys={["Azure DevOps", "Jenkins"]}
                 rating={[6, 6]}
               />
-              <Sonnet key={7} keys={["Docker", "Kubernetes"]} rating={[4, 3]} />
+              <Sonnet key={7} keys={["Docker", "Kubernetes"]} rating={[4, 5]} />
               <Sonnet key={8} keys={["Git", "AWS CodeBuild"]} rating={[6, 5]} />
               <Sonnet key={9} keys={["Sonar & JFrog"]} rating={[4]} />
               <Sonnet

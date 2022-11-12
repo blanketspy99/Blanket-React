@@ -50,7 +50,7 @@ export default function Skills(props) {
                   className="py-0 px-0 mt-3 float-end"
                   onClick={handleShow}
                 >
-                  <Card.Title as="i">
+                  <Card.Title as="i" className="d-print-none">
                     {" "}
                     more... {}
                   </Card.Title>

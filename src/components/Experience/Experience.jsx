@@ -49,7 +49,10 @@ export default function Experience() {
           <Card.Body>
             <Card.Title as="h4">{item["Role"]}</Card.Title>
             <Card.Subtitle as="p" className="companyName">
-              {item["Company Name"]} - {item["Client Name"]} Client{" "}
+              {item["Client Name"] 
+              ? item["Company Name"] +" - "+ item["Client Name"] + " Client"
+            : item["Company Name"] }
+              {/* {item["Company Name"]} - {item["Client Name"]} Client{" "} */}
               {" "} <a
                   href={item["Company Website"]}
                   target="_blank"
@@ -172,7 +175,7 @@ export default function Experience() {
                   className="text-sm-start my-2 px-md-3"
                 >
                   {" "}
-                  <a href="mailto:shahrukh690432@gmail.com">
+                  <a href={'mailto:'+details["Email"]}>
                     <MailIcon style={{ marginLeft: "16px" }} />{" "}
                     {details["Email"]}
                   </a>
@@ -184,7 +187,7 @@ export default function Experience() {
                   className="text-sm-start my-2 px-md-3"
                 >
                   {" "}
-                  <a href="tel:+919430162671">
+                  <a href={"tel:"+details["Telephone"]}>
                     <PhoneIphoneIcon style={{ marginLeft: "16px" }} />{" "}
                     {details["Telephone"]}{" "}
                   </a>
@@ -239,8 +242,12 @@ export default function Experience() {
       <Education exp={details}/>
       <Certification exp={details}/>
       <Interests exp={details}/> 
+      {details['WebVersion']
+      ?
       <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']} target="_blank"
                     rel="noopener noreferrer">{details['WebVersion']}</a> </em> 
+                  :
+                  "" }
       </Col>
         <Col lg={2} className="d-none d-lg-block">
         <div className="mt-4">
