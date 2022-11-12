@@ -8,8 +8,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Skills from "./skills";
 import Education from "./Education";
 import Certification from "./Certifications";
@@ -143,7 +142,7 @@ export default function Experience() {
           {/* <Container fluid="lg"> */}
               <Card>
                 <Card body>
-                  <Card.Title as="h1">{details['Name']} <Button onClick={() => window.print()} variant="white" className="float-end d-lg-none d-print-none"><FontAwesomeIcon icon={faFileDownload} color="#6c757d" size="xl"/></Button></Card.Title>
+                  <Card.Title as="h1">{details['Name']} <Button onClick={() => window.print()} variant="white" className="float-end d-lg-none d-print-none"><FileDownloadIcon fontSize="large"/></Button></Card.Title> 
                   <Card.Subtitle as="h5" className="mb-2 text-muted">
                     {details["Primary Title"]}
                   </Card.Subtitle>
