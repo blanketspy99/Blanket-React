@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
@@ -18,19 +18,19 @@ export default function MyNavigationBar() {
               <Nav.Link as={NavLink} to={"experience"} eventKey={1}>Resume</Nav.Link>
               {/* <Nav.Link href="experience">Resume</Nav.Link> */}
               <Nav.Link as="a" href="https://github.com/blanketspy99" target="_blank">Repos</Nav.Link>
-              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+              <NavDropdown title="Module Docs" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="mycommon">mycommon</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.2">
                   Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                </NavDropdown.Item> */}
+                {/* <NavDropdown.Item href="#action/3.3">
                   Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                </NavDropdown.Item> */}
+                {/* <NavDropdown.Divider /> */}
+                {/* <NavDropdown.Item href="#action/3.4">
                   Separated link
-                </NavDropdown.Item>
-              </NavDropdown> */}
+                </NavDropdown.Item> */}
+              </NavDropdown>
             </Nav>
             <Nav>
               {/* <Nav.Link as={NavLink} to="#">More deets</Nav.Link> */}
