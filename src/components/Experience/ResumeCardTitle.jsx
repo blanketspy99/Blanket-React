@@ -13,10 +13,10 @@ export default function ResumeCardTitle(props){
         state: false,
         style: { transform: "rotate(270deg)" },
       });
-    
+
 
     function handleClick(event) {
-        
+
         function toggle(setFunction) {
           setFunction((prev) => {
             if (prev.state === true) {
@@ -33,7 +33,7 @@ export default function ResumeCardTitle(props){
 
     return (
     <>
-        <Card>
+        <Card style={props.style}>
         <Card.Body>
         <Button
                   id={props.id}
@@ -45,14 +45,14 @@ export default function ResumeCardTitle(props){
             <ArrowDropDownOutlinedIcon style={toggle.style} /></Card.Title>
             </Button>
             <Collapse isOpened={toggle.state}>
-            
+
            {props.children}
             </Collapse>
             </Card.Body>
 
         </Card>
 
-        
+
     </>
     )
 

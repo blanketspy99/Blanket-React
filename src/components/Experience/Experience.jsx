@@ -239,7 +239,7 @@ export default function Experience() {
                 {itemList}
             </Card.Text> </ResumeCardTitle>
 
-            <ResumeCardTitle title="Other Projects" id="rr"> <Card.Text as="ul">
+            <ResumeCardTitle title="Other Projects" id="rr" style={{pageBreakInside: "avoid"}}> <Card.Text as="ul" >
                 {otherList}
             </Card.Text> </ResumeCardTitle>
 
