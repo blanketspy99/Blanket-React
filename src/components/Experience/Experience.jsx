@@ -32,11 +32,20 @@ export default function Experience() {
     else {
       axios.get(process.env.PUBLIC_URL+"/experience.json").then((response) => {
         setDetails(response.data);
-      })     }
+        // document.title = details["Name"];
+      })     };
 
-    }, [val]);
+    }, [val, details]);
 
-  let itemList = [];
+    useEffect(() => {
+      if (details) {
+        let experience_title=details["Name"]
+        experience_title=experience_title.replace(/\s+/g,'_')+"_Resume";
+        document.title = experience_title;
+      }
+      }, [details]);
+
+    let itemList = [];
   let otherList = [];
   if (details) {
   details["Work Experience"].forEach((item, index) => {
@@ -48,7 +57,7 @@ export default function Experience() {
           <Card.Body>
             <Card.Title as="h4">{item["Role"]}</Card.Title>
             <Card.Subtitle as="p" className="companyName">
-              {item["Client Name"] 
+              {item["Client Name"]
               ? item["Company Name"] +" - "+ item["Client Name"] + " Client"
             : item["Company Name"] }
               {/* {item["Company Name"]} - {item["Client Name"]} Client{" "} */}
@@ -72,18 +81,18 @@ export default function Experience() {
               </Col>
             </Row>
             {/* <Card.Subtitle className="mb-2 text-muted"> Card subtitle </Card.Subtitle> */}
-            <ResumeRR title="Achievement/Tasks" id={index}> 
+            <ResumeRR title="Achievement/Tasks" id={index}>
             <Card.Text as="ul">
             {item["TaskAchievements"].map((data, idx) => (
               <li key={idx}>{parse(data)}</li>
             ))}
           </Card.Text>
           </ResumeRR>
-      
+
           </Card.Body>
         </Card>
         </div>
-      // </Container> 
+      // </Container>
     );
   });
 
@@ -121,12 +130,12 @@ export default function Experience() {
                     "<li key="+idx+">"
                     +data+"</li>"
                   )).join(""))}
-                  </Card.Text>   
+                  </Card.Text>
               </ResumeRR>
           </Card.Body>
         </Card>
         </div>
-        
+
       // </Container>
     );
   });
@@ -134,7 +143,7 @@ export default function Experience() {
 
   return (
     <>
-    {details ? 
+    {details ?
     <Container fluid>
       <Row>
         <Col lg={2} className="d-none d-lg-block"></Col>
@@ -142,7 +151,7 @@ export default function Experience() {
           {/* <Container fluid="lg"> */}
               <Card>
                 <Card body>
-                  <Card.Title as="h1">{details['Name']} <Button onClick={() => window.print()} variant="white" className="float-end d-lg-none d-print-none"><FileDownloadIcon fontSize="large"/></Button></Card.Title> 
+                  <Card.Title as="h1">{details['Name']} <Button onClick={() => window.print()} variant="white" className="float-end d-lg-none d-print-none"><FileDownloadIcon fontSize="large"/></Button></Card.Title>
                   <Card.Subtitle as="h5" className="mb-2 text-muted">
                     {details["Primary Title"]}
                   </Card.Subtitle>
@@ -156,9 +165,9 @@ export default function Experience() {
         readLessClassName="read-more-less--less">
                     {details['Objective Summary']}
                     </ReactReadMoreReadLess>
-                    
+
                   </Card.Text>
-   
+
                 </Card>
               </Card>
           {/* </Container>  */}
@@ -166,7 +175,7 @@ export default function Experience() {
           {/* <Container  fluid="lg" className="py-1"> */}
             <Card bg="gray-300" className="py-1">
               <Row className="py-3 mx-sm-5 justify-content-sm-center">
-              
+
                 <Col
                   lg={"auto"}
                   sm={"6"}
@@ -221,8 +230,8 @@ export default function Experience() {
                     {details["LinkedIn"]}{" "}
                   </a>
                 </Col>
-    
-                
+
+
               </Row>
               </Card>
           {/* </Container> */}
@@ -233,25 +242,25 @@ export default function Experience() {
             <ResumeCardTitle title="Other Projects" id="rr"> <Card.Text as="ul">
                 {otherList}
             </Card.Text> </ResumeCardTitle>
-          
-          
+
+
 
 
       <Skills exp={details}/>
       <Education exp={details}/>
       <Certification exp={details}/>
-      <Interests exp={details}/> 
+      <Interests exp={details}/>
       {details['WebVersion']
       ?
       <em className="d-none d-print-block">Web version of this resume is available <a href={details['WebVersion']} target="_blank"
-                    rel="noopener noreferrer">{details['WebVersion']}</a> </em> 
+                    rel="noopener noreferrer">{details['WebVersion']}</a> </em>
                   :
                   "" }
       </Col>
         <Col lg={2} className="d-none d-lg-block">
         <div className="mt-4">
-        <center> 
-        
+        <center>
+
   <Form.Select disabled onChange={(valu)=>(setVal(valu.target.value))}>
     <option value="">Default</option>
   <option value={"exp2"}> Exp 2 </option>
