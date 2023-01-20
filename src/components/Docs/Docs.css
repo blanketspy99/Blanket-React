@@ -1,0 +1,17 @@
+/* body { */
+    /* overflow: hidden; Hide scrollbars */
+  /* } */
+
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .docs::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .docs {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    height: 100%;
+    /* position: absolute; */
+  }
