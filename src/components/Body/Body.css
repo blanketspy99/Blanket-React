@@ -1,35 +1,37 @@
 
+
 .bgimg {
     /* Background image */
     background-image: url('../../../public/forestbridge.jpg');
     /* Full-screen */
-    height: 100px;
+    /* height: 100px; */
     /* Center the background image */
     background-position: center;
     /* Scale and zoom in the image */
     background-size: cover;
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
+    /* position: absolute; */
     /* Add a white text color to all elements inside the .bgimg container */
     color: white;
     /* Add a font */
     font-family: "Courier New", Courier, monospace;
     /* Set the font-size to 25 pixels */
     font-size: 25px;
-    position: absolute;
+    /* position: absolute; */
     padding:0;
     margin:0;
         /* top: 50px; */
       width: 100%;
     height: 100%;
+
   }
-  
+
   /* Position text in the top-left corner */
   .bgimg > a {
     text-decoration: line-through;
   }
-  
-  
+
+
   /* Position text in the middle */
   .middle {
     position: absolute;

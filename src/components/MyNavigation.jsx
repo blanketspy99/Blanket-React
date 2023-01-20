@@ -1,13 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
+import axios from "axios";
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 export default function MyNavigationBar() {
+
+
+  const [pages, setPages] = useState();
+  const [pagesDropDown, setPagesDropDown] = useState([])
+  // eslint-disable-next-line
+
+useEffect(() => {
+
+    axios.get(process.env.PUBLIC_URL+"/docs.json").then((response) => {
+      setPages(response.data);
+      // document.title = details["Name"];
+    });
+
+
+  if (pages){
+  const pageNames = Object.keys(pages);
+  const pageNamesCount = pageNames.length;
+  // let skillsList=[];
+  let pageIndex = [];
+  for (let i = 0; i < pageNamesCount; i++) {
+    const key = pageNames[i];
+
+      pageIndex.push(
+        <NavDropdown.Item as={NavLink} to={"docs?page="+key} key={"pageKey"+i} eventKey={"pageKey"+i}>{key} </NavDropdown.Item>
+
+      );
+  };
+  setPagesDropDown(pageIndex);}
+},[pages]);
+
   return (
     <Container fluid>
     <div className="row">
-      <Navbar sticky="top" className="navbar-fixed-top" collapseOnSelect expand="md" bg="dark" variant="dark">
+    {/* sticky="top" */}
+      <Navbar className="navbar-fixed-top" collapseOnSelect expand="md" bg="dark" variant="dark">
         {" "}
         {/* bg="dark" variant="dark"*/}
           {/* <Container fluid> */}
@@ -19,7 +51,8 @@ export default function MyNavigationBar() {
               {/* <Nav.Link href="experience">Resume</Nav.Link> */}
               <Nav.Link as="a" href="https://github.com/blanketspy99" target="_blank">Repos</Nav.Link>
               <NavDropdown title="Module Docs" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="mycommon">mycommon</NavDropdown.Item>
+                {/* <NavDropdown.Item as={NavLink} to={'docs?page=mycommon'} state={{ from: "the-page-id" }} eventKey={2}>mycommon</NavDropdown.Item> */}
+                {pagesDropDown}
                 {/* <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item> */}
@@ -34,7 +67,7 @@ export default function MyNavigationBar() {
             </Nav>
             <Nav>
               {/* <Nav.Link as={NavLink} to="#">More deets</Nav.Link> */}
-              <Nav.Link as={NavLink} eventKey={2} to="/#">
+              <Nav.Link as={NavLink} eventKey={3} to="/#">
                 Home
               </Nav.Link>
             </Nav>

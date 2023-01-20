@@ -37,16 +37,30 @@
   }
 } */
 /* html {
-  overflow: -moz-scrollbars-vertical; 
-  overflow-y: scroll; 
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
   height: 100%;
 } */
 body {
   background-color: whitesmoke;
-  height: 100%;
+  height: 100vh;
+  margin: 0;
 }
-
-
+#root {
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100%; */
+  height: 100%;
+  /* position: relative; */
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.vh-100{
+  min-height: 100vh;
+}
 /* Style the <hr> element */
 
 /* li > button.nav-link:active {
@@ -57,8 +71,8 @@ body {
   .ReactCollapse--collapse {
     height: auto !important;
   }
-  body { 
-    -webkit-print-color-adjust: exact; 
+  body {
+    -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
   .navbar {
@@ -66,4 +80,4 @@ body {
   }
   @page { margin: 0;
     size: A3; }
-} 
+}
