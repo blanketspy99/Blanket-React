@@ -35,7 +35,7 @@ export default function Experience() {
         // document.title = details["Name"];
       })     };
 
-    }, [val, details]);
+    }, [val]);
 
     useEffect(() => {
       if (details) {
