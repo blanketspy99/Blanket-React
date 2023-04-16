@@ -8,12 +8,12 @@ hr {
   .Work, .otherProjects {
     padding-bottom: 0px;
   }
-  
+
   .companyName {
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
   .card  a {
     text-decoration: none;
     color: inherit;
@@ -33,32 +33,27 @@ hr {
     background-color: rgba(100, 255, 100, 0.1); */
     transition: height 500ms;
   }
-  
+
   .modal-content {
     background-color: whitesmoke;
   }
-  
+
   .modal-header, .nav.nav-tabs {
     border-bottom: 1px solid darkgray;
   }
-  
+
     /* .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
       color: #495057;
       background-color: darkgray;
       border-color: darkgray darkgray lightgray;
   } */
-  
+
   li > button.nav-link, li > button.nav-link:hover {
     color: inherit;
     background-color: grey;
   }
 
-
   /* .navbar-dark .navbar-nav .nav-link.active  */
-  [aria-current="page"] {
-    background-color: #464a4e;
-    border-radius: 10px;
-  }
   .read-more-less--more,
   .read-more-less--less {
     color: #999;
