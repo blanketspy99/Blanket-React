@@ -7,22 +7,21 @@ import axios from "axios";
 export default function MyNavigationBar() {
 
 
-  const [pages, setPages] = useState();
+  // const [pages, setPages] = useState();
+  // const [pageCount, setPageCount] = useState(0)
   const [pagesDropDown, setPagesDropDown] = useState([])
   // eslint-disable-next-line
 
 useEffect(() => {
 
     axios.get(process.env.PUBLIC_URL+"/docs.json").then((response) => {
-      setPages(response.data);
+      let pages=response.data;
       // document.title = details["Name"];
-    });
 
 
   if (pages){
   const pageNames = Object.keys(pages);
   const pageNamesCount = pageNames.length;
-  // let skillsList=[];
   let pageIndex = [];
   for (let i = 0; i < pageNamesCount; i++) {
     const key = pageNames[i];
@@ -33,7 +32,8 @@ useEffect(() => {
       );
   };
   setPagesDropDown(pageIndex);}
-},[pages]);
+});
+},[]);
 
   return (
     <Container fluid>
