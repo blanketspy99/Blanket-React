@@ -2,7 +2,7 @@
     "Name": "Shahrukh Shaik",
     "Primary Title": "Senior Machine Learning Engineer",
     "Objective Summary": "Polyglot developer, Consultant, primarly a Dev(ML)Ops/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
-    "Email": "shahrukh690432@gmail.com",
+    "Email": "shahrukh690432@hotmail.com",
     "LinkedIn": "linkedin.com/in/shahrukh432",
     "Telephone": "+91-9430162671",
     "Location": "Hyderabad, India",
@@ -15,9 +15,12 @@
         "Start Month Year": "2022/09 ",
         "End Month Year": "None",
         "TaskAchievements": ["Responsible for implementing resilience, fault tolerant and High Availabilty systems.",
-        "Working on stabilising the kafka cluster such as addition/removal of ad-hoc nodes to cluster on the go, proper managment of topics and its partitions, primarily using ansible.",
+        "Working on stabilising the kafka cluster such as addition/removal of ad-hoc nodes to cluster on the go, proper managment of topics and its partitions, primarily using <b>ansible.</b>",
         "Written re-usable python modules contributing as single source code repository within entire organisation.",
-        "Worked on K8s cluster management and deployments, primarily using <b>helm charts</b>."
+        "Worked on K8s cluster management and deployments, primarily using <b>helm charts</b>.",
+        "Worked on AWS services such as Cloudfront, SES, Load Balancers, EC2, SNS, Route 53 and ACM.",
+        "Used Packer for built of optimised AMI's based on application requirements.",
+        "Managing Jenkins which includes configuration, backup & restoration, horizontal scaling of slaves, upgrades."
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.sprinklr.com"
@@ -30,7 +33,7 @@
         "End Month Year": "2022/09",
         "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
         "Created code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
-        "Working as MLOps engineer, building pipelines for end-to-end Model lifecycle using native AWS services",
+        "Worked as MLOps engineer, building pipelines for end-to-end Model lifecycle using native AWS services",
         "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, ECS, RDS, Lambda,IAM, Secrets, KMS keys etc.,",
         "Worked on standardization of IAM user role policies of various personas like support, admin and development.",
         "Working on Cloud Economics Program which focuses on budgeting, cost analysis and savings on AWS Resources. "
@@ -56,7 +59,7 @@
     {
         "Company Name": "Wipro Limited",
         "Client Name": "BP",
-        "Role": "DevOps Engineer (Platform Lead)",
+        "Role": "Lead Platform Engineer",
         "Start Month Year": "01/2020 ",
         "End Month Year": " 08/2021",
         "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
