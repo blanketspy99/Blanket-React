@@ -21,10 +21,10 @@
         "Working on K8s cluster management and deployments, primarily using <b>helm charts</b>.",
         "Built docker multi-architecture images for cross platform deployments",
         "Worked on AWS services such as Cloudfront, SES, EC2, SNS, Route 53 and ACM for client partner customisation such as custom landing page, client SSO and for customer support with client.",
-        "Used Packer for built of optimised AMI's based on application requirements.",
+        "Used <b>Packer</b> for built of optimised AMI's based on application requirements.",
         "Managing Jenkins which includes configuration, backup & restoration, horizontal auto-scaling of slaves, upgrades.",
-        "Implemented gitops ArgoCD for kubernetes deployments via helm charts",
-        "Setup of <b>Harshicorp Vault</b>, <b>ELK</b> stack, <b>DR environment</b> and experience of working in multi-cloud are few other noteworthy skills."
+        "Implemented gitops <b>ArgoCD</b> for kubernetes deployments via helm charts",
+        "Setup of <b>Harshicorp Vault</b>, <b>ELK stack</b>, <b>DR environment</b> and experience of working in multi-cloud are few other noteworthy skills."
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.sprinklr.com"
