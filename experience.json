@@ -9,11 +9,24 @@
     "WebVersion": "https://blanketspy99.avanverse.com/#/experience",
     "Work Experience":[
     {
+        "Company Name": "TE Connectivity",
+        "Client Name": "",
+        "Role": "DevOps Architect",
+        "Start Month Year": "2023/09 ",
+        "End Month Year": "present",
+        "TaskAchievements": ["Responsible for design, architect and setup of Infrastructure systems.",
+        "Implement the security best practices and driving the team towards it.",
+        "Contributing to maturity of the DevOps and SRE practices within the organisation driving innovation."
+        ],
+        "Location": "Bangalore, India",
+        "Company Website": "https://www.te.com"
+    },
+    {
         "Company Name": "Sprinklr",
         "Client Name": "",
         "Role": "Senior DevOps Engineer",
         "Start Month Year": "2022/09 ",
-        "End Month Year": "None",
+        "End Month Year": "2023/09",
         "TaskAchievements": ["Responsible for implementing resilience, fault tolerant and High Availabilty systems.",
         "Designed, implemented, and streamlined <b>DevSecOps</b> pipelines, fostering collaboration, security integration, and continuous delivery throughout the development lifecycle.",
         "Worked on stabilising and autoscaling of the <b>kafka</b> cluster such as addition/removal of brokers to cluster on the go, proper managment of topics and its partitions, using raid setup, primarily using <b>ansible.</b>",
