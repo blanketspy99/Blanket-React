@@ -2,7 +2,7 @@
     "Name": "Shahrukh Shaik",
     "Primary Title": "Lead Consultant",
     "Objective Summary": "Data Engineer, Consultant, primarly a Dev(ML)Ops/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
-    "Email": "shahrukh690432@hotmail.com",
+    "Email": "shahrukh690432@gmail.com",
     "LinkedIn": "linkedin.com/in/shahrukh432",
     "Telephone": "+91-9430162671",
     "Location": "Hyderabad, India",
@@ -18,9 +18,9 @@
         "Implementing the security best practices and driving the team towards it.",
         "Contributing to maturity of the DevOps and SRE practices within the organisation driving innovation.",
         "Onboarded and setup the complete Databricks & Snowflake Data Platform with AWS and terraformed the same.",
-        "Onboarded Terraform into the landscape and migrated all the AWS CloudFormation templates to Terraform and deployments via Terragrunt",
-        "Build a Django Rest Framework internal data consumption API, later extended the API to serve other capabilities, there by fostering easy collabration with different platform tools natively.",
-        "Built a python shared resuable module for seamless and faster integration for application development, deployment, automation and in DevOps process"
+        "Onboarded <b>Terraform</b> into the landscape and migrated all the AWS CloudFormation templates to <b>Terraform</b> and deployments via <b>Terragrunt</b>",
+        "Built a Django Rest Framework based internal data consumption API, later extended the API to serve other capabilities, there by fostering easy collabration with different platform tools natively.",
+        "Built a python shared resuable <b>utilities and filesystem (s3, sharepoint, win/unix) module</b> for seamless and faster integration for application development, deployment, automation and in DevOps processes."
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.te.com"
@@ -99,7 +99,7 @@
         "Start Month Year": "05/2019 ",
         "End Month Year": " 01/2020",
         "TaskAchievements": ["<b>Subject Matter Expert (SME)</b> for Informatica Hosting, Architecture and Administration.",
-        "<b>Platform lead</b> for <b>BP Cloud Migration (Digital Foundations) Programme</b> for movement of complex Informatica architecture consisting of more than 40+ applications all over the world.",
+        "<b>Platform lead</b> for <b>BP Cloud Migration (Digital Foundations/ Cloud Transformation) Programme</b> for movement of complex Informatica architecture consisting of more than 40+ applications all over the world.",
         "Designed and implemented entire Informatica Architecture in AWS Cloud with HA and DR capabilities.",
         "Worked as <b>Data Analyst</b> involved in developing Informatica mappings, workflows and transformations.",
         "Responsible for implementation of <b>DevOps culture</b> in Informatica PowerCenter & Data Quality Environment.",
