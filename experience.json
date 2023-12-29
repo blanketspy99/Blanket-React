@@ -15,8 +15,12 @@
         "Start Month Year": "2023/09 ",
         "End Month Year": "present",
         "TaskAchievements": ["Responsible for design, architect and setup of Infrastructure systems.",
-        "Implement the security best practices and driving the team towards it.",
-        "Contributing to maturity of the DevOps and SRE practices within the organisation driving innovation."
+        "Implementing the security best practices and driving the team towards it.",
+        "Contributing to maturity of the DevOps and SRE practices within the organisation driving innovation.",
+        "Onboarded and setup the complete Databricks & Snowflake Data Platform with AWS and terraformed the same.",
+        "Onboarded Terraform into the landscape and migrated all the AWS CloudFormation templates to Terraform and deployments via Terragrunt",
+        "Build a Django Rest Framework internal data consumption API, later extended the API to serve other capabilities, there by fostering easy collabration with different platform tools natively.",
+        "Built a python shared resuable module for seamless and faster integration for application development, deployment, automation and in DevOps process"
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.te.com"
@@ -30,12 +34,12 @@
         "TaskAchievements": ["Responsible for implementing resilience, fault tolerant and High Availabilty systems.",
         "Designed, implemented, and streamlined <b>DevSecOps</b> pipelines, fostering collaboration, security integration, and continuous delivery throughout the development lifecycle.",
         "Worked on stabilising and autoscaling of the <b>kafka</b> cluster such as addition/removal of brokers to cluster on the go, proper managment of topics and its partitions, using raid setup, primarily using <b>ansible.</b>",
-        "Contributing for re-usable python modules contributing as single source code repository within entire organisation.",
+        "Contributed for re-usable python modules acting as single source code truth within entire organisation.",
         "Working on K8s cluster management and deployments, primarily using <b>helm charts</b>.",
         "Built docker multi-architecture images for cross platform deployments",
         "Worked on AWS services such as Cloudfront, SES, EC2, SNS, Route 53 and ACM for client partner customisation such as custom landing page, client SSO and for customer support with client.",
         "Used <b>Packer</b> for built of optimised AMI's based on application requirements.",
-        "Managing Jenkins which includes configuration, backup & restoration, horizontal auto-scaling of slaves, upgrades.",
+        "Managed Jenkins which includes configuration, backup & restoration, horizontal auto-scaling of slaves, upgrades.",
         "Implemented gitops <b>ArgoCD</b> for kubernetes deployments via helm charts",
         "Setup of <b>Harshicorp Vault</b>, <b>ELK stack</b>, <b>DR environment</b> and experience of working in multi-cloud are few other noteworthy skills."
         ],
