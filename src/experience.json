@@ -1,44 +1,70 @@
 {
     "Name": "Shahrukh Shaik",
-    "Primary Title": "Senior Software Engineer",
-    "Objective Summary": "Polyglot developer, Consultant, primarly a DevOps/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
+    "Primary Title": "Lead Consultant",
+    "Objective Summary": "Data Engineer, Consultant, primarly a Dev(ML)Ops/Infrastructure engineer with 5+ years of hands-on experience in developing, architecting/ automating and optimizing critical deployments over large infrastructure in AWS, leveraging configuration management, CI/CD, and DevOps processes. Also, experienced working as Data Analyst / Machine learning Practitioner. Looking for a career opportunity where I can expand all my skill sets to the advantage of the organisation while having the scope to learn and develop new skills .",
     "Email": "shahrukh690432@gmail.com",
     "LinkedIn": "linkedin.com/in/shahrukh432",
     "Telephone": "+91-9430162671",
     "Location": "Hyderabad, India",
-    "Work Experience":[{
+    "WebVersion": "https://blanketspy99.avanverse.com/#/experience",
+    "Work Experience":[
+    {
+        "Company Name": "TE Connectivity",
+        "Client Name": "",
+        "Role": "DevOps Architect",
+        "Start Month Year": "2023/09 ",
+        "End Month Year": "present",
+        "TaskAchievements": ["Responsible for design, architect and setup of Infrastructure systems.",
+        "Implementing the security best practices and driving the team towards it.",
+        "Contributing to maturity of the DevOps and SRE practices within the organisation driving innovation.",
+        "Onboarded and setup the complete Databricks & Snowflake Data Platform with AWS and terraformed the same.",
+        "Onboarded Terraform into the landscape and migrated all the AWS CloudFormation templates to Terraform and deployments via Terragrunt",
+        "Build a Django Rest Framework internal data consumption API, later extended the API to serve other capabilities, there by fostering easy collabration with different platform tools natively.",
+        "Built a python shared resuable module for seamless and faster integration for application development, deployment, automation and in DevOps process"
+        ],
+        "Location": "Bangalore, India",
+        "Company Website": "https://www.te.com"
+    },
+    {
+        "Company Name": "Sprinklr",
+        "Client Name": "",
+        "Role": "Senior DevOps Engineer",
+        "Start Month Year": "2022/09 ",
+        "End Month Year": "2023/09",
+        "TaskAchievements": ["Responsible for implementing resilience, fault tolerant and High Availabilty systems.",
+        "Designed, implemented, and streamlined <b>DevSecOps</b> pipelines, fostering collaboration, security integration, and continuous delivery throughout the development lifecycle.",
+        "Worked on stabilising and autoscaling of the <b>kafka</b> cluster such as addition/removal of brokers to cluster on the go, proper managment of topics and its partitions, using raid setup, primarily using <b>ansible.</b>",
+        "Contributed for re-usable python modules acting as single source code truth within entire organisation.",
+        "Working on K8s cluster management and deployments, primarily using <b>helm charts</b>.",
+        "Built docker multi-architecture images for cross platform deployments",
+        "Worked on AWS services such as Cloudfront, SES, EC2, SNS, Route 53 and ACM for client partner customisation such as custom landing page, client SSO and for customer support with client.",
+        "Used <b>Packer</b> for built of optimised AMI's based on application requirements.",
+        "Managed Jenkins which includes configuration, backup & restoration, horizontal auto-scaling of slaves, upgrades.",
+        "Implemented gitops <b>ArgoCD</b> for kubernetes deployments via helm charts",
+        "Setup of <b>Harshicorp Vault</b>, <b>ELK stack</b>, <b>DR environment</b> and experience of working in multi-cloud are few other noteworthy skills."
+        ],
+        "Location": "Bangalore, India",
+        "Company Website": "https://www.sprinklr.com"
+    },
+    {
         "Company Name": "Happiest Minds Technologies",
-        "Client Name": "TE Connectivity",
-        "Role": "Senior Platform Engineer",
+        "Client Name": "",
+        "Role": "Senior Data Scientist (ML Engineer)",
         "Start Month Year": "2021/09 ",
-        "End Month Year": "None",
+        "End Month Year": "2022/09",
         "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
-        "Created code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
-        "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, RDS, Aurora, Lambda,IAM, Secrets, KMS keys.",
+        "Created advanced code application pipelines using <b>Jenkins</b> and Infrastructure as Code pipelines using <b>AWS CodeBuild</b>.",
+        "Worked as MLOps engineer, building pipelines for end-to-end Model lifecycle using native AWS services",
+        "Created <b>CloudFormation templates</b> for various AWS Cloud services like EC2, S3, EMR, ECS, RDS, Lambda,IAM, Secrets, KMS keys etc.,",
         "Worked on standardization of IAM user role policies of various personas like support, admin and development.",
-        "Working on Cloud Economics Program which focuses on budgeting, cost analysis and savings on AWS Resources."
+        "Worked on Cloud Economics Program which focuses on budgeting, cost analysis and savings on AWS Resources. "
         ],
         "Location": "Bangalore, India",
         "Company Website": "https://www.happiestminds.com"
     },
     {
         "Company Name": "Wipro Limited",
-        "Client Name": "BP",
-        "Role": "DevOps Engineer (Platform Lead)",
-        "Start Month Year": "01/2020 ",
-        "End Month Year": " 08/2021",
-        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
-        "<b>Implemented CI/CD pipelines</b> using Azure DevOps in AWS within Informatica for automated code deployments, unit tests and quality review checks which significantly reduced the deployment time by <b>50%</b>.",
-        "<b>Certified Wipro DevOps Professional</b>.",
-        "Experience in Python application building, packaging and deploying and containerizing the same.",
-        "Upgraded all the Informatica Application systems from <b>On-Premise (9.5) to Cloud AWS (10.2/10.4)</b>. This includes procuring of new instances, configuration and installation of Informatica applications and their dependencies.",
-        "Assist in upgrading the On-Premise applications to AWS for upstream business and for any other Informatica application identified for upgrade and migration to AWS."],
-        "Location": "Hyderabad, India",
-        "Company Website": "https://www.wipro.com"
-    },
-    {
-        "Company Name": "Wipro Limited",
-        "Client Name": "BP",
+        "Client Name": "",
         "Role": "Machine Learning Practitioner (DataIku)",
         "Start Month Year": "10/2020 ",
         "End Month Year": " 08/2021",
@@ -53,7 +79,22 @@
     },
     {
         "Company Name": "Wipro Limited",
-        "Client Name": "BP",
+        "Client Name": "",
+        "Role": "Lead Platform Engineer",
+        "Start Month Year": "01/2020 ",
+        "End Month Year": " 08/2021",
+        "TaskAchievements": ["Responsible for design, develop, document, analyze, create, test and modify computer systems, programs and integrations concurring with DevOps CI/CD pipelines.",
+        "<b>Implemented CI/CD pipelines</b> using Azure DevOps in AWS within Informatica for automated code deployments, unit tests and quality review checks which significantly reduced the deployment time by <b>50%</b>.",
+        "<b>Certified Wipro DevOps Professional</b>.",
+        "Experience in Python application building, packaging and deploying and containerizing the same.",
+        "Upgraded all the Informatica Application systems from <b>On-Premise (9.5) to Cloud AWS (10.2/10.4)</b>. This includes procuring of new instances, configuration and installation of Informatica applications and their dependencies.",
+        "Assist in upgrading the On-Premise applications to AWS for upstream business and for any other Informatica application identified for upgrade and migration to AWS."],
+        "Location": "Hyderabad, India",
+        "Company Website": "https://www.wipro.com"
+    },
+    {
+        "Company Name": "Wipro Limited",
+        "Client Name": "",
         "Role": "Senior Project Engineer",
         "Start Month Year": "05/2019 ",
         "End Month Year": " 01/2020",
@@ -70,7 +111,7 @@
     },
     {
         "Company Name": "Wipro Limited",
-        "Client Name": "BP",
+        "Client Name": "",
         "Role": "Project Engineer",
         "Start Month Year": "08/2017 ",
         "End Month Year": " 05/2019",
@@ -114,8 +155,8 @@
         "Utilities": "BMC Remedy, Service Now, Jira",
         "Cloud Services": "AWS, Azure",
         "ETL/ELT Tools": "Informatica PowerCenter, DataStage, Talend DI, Dell Boomi & DataIku",
-        "Configuration Management": "Ansible",
-        "Domain": "Energy"
+        "Configuration Management": "Ansible, CloudFormation, Troposphere, Terraform",
+        "Domain": "Energy, Data Analytics, Cloud"
     },
     "Education":[
         {
@@ -141,5 +182,14 @@
         "DataIku Advance Designer and Administrator L2",
         "DataIku Machine Learning Practitioner",
         "Wipro DevOps Professional"
+    ],
+    "Interests": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Big Data",
+        "Economics",
+        "Android",
+        "Marketing",
+        "Physics"
     ]
 }
